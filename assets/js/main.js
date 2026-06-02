@@ -12,7 +12,7 @@ import { BusinessStatus, businessStatus } from './modules/business/status.js';
 import { ContactManager, contactManager } from './modules/business/contact.js';
 import { ImageLoader, imageLoader } from './modules/product/image-loading.js';
 
-class BrasasSmokehouseApp {
+class MunozBurgerApp {
     constructor() {
         this.managers = {};
         this.isInitialized = false;
@@ -23,7 +23,7 @@ class BrasasSmokehouseApp {
 
     async init() {
         try {
-            console.log('🔥 Starting Brasas Smokehouse PWA...');
+            console.log('🔥 Starting Muñoz Burger PWA...');
 
             this.ensureContentVisibility();
             
@@ -371,7 +371,7 @@ class ServiceWorkerIntegration {
         const titleContainer = document.createElement('div');
         
         const title = document.createElement('strong');
-        title.textContent = 'Instalar Brasas Smokehouse';
+        title.textContent = 'Instalar Muñoz Burger';
         title.style.cssText = 'font-size: 18px; display: block;';
         
         const subtitle = document.createElement('span');
@@ -663,7 +663,7 @@ class ServiceWorkerIntegration {
 }
 
 // Create app instance
-const app = new BrasasSmokehouseApp();
+const app = new MunozBurgerApp();
 window.app = app; // Make app globally available for SW integration
 
 // Initialize Service Worker Integration
@@ -722,7 +722,7 @@ window.forceShowAllContent = () => app.ensureContentVisibility();
 
 // Debug tools (development only)
 if (typeof process !== 'undefined' && process.env?.NODE_ENV === 'development') {
-    window.BrasasDebug = {
+    window.MunozBurgerDebug = {
         app,
         managers: () => app.managers,
         reinit: () => app.init(),
@@ -730,10 +730,10 @@ if (typeof process !== 'undefined' && process.env?.NODE_ENV === 'development') {
         forceShow: () => app.emergencyVisibilityFix(),
         checkHidden: () => app.findHiddenElements()
     };
-    console.log('🔧 Debug tools: window.BrasasDebug');
+    console.log('🔧 Debug tools: window.MunozBurgerDebug');
 } else {
     // Production debug tools (limited)
-    window.BrasasDebug = {
+    window.MunozBurgerDebug = {
         app,
         stats: () => app.getStats(),
         forceShow: () => app.emergencyVisibilityFix()
