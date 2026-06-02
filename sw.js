@@ -1,6 +1,6 @@
 //sw.js
 
-const CACHE_VERSION = 'brasas-mx-v1.2.0';
+const CACHE_VERSION = 'munoz-burger-v1.2.0';
 const CRITICAL_CACHE = `critical-${CACHE_VERSION}`;
 const MENU_CACHE = `menu-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
@@ -38,7 +38,7 @@ const MENU_ASSETS = [
 
 // Static assets
 const STATIC_ASSETS = [
-  '/assets/images/logo/brasas-icon-192-192.png',
+  '/assets/images/logo/munoz-icon-192-192.png',
   '/assets/images/logo/favicon-512-512.png',
   '/assets/images/favicon/favicon-512-512.png',
   '/assets/images/favicon/favicon.ico'
@@ -331,7 +331,7 @@ async function handleError(request) {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sin conexión - Brasas Smokehouse</title>
+        <title>Sin conexión - Muñoz Burger</title>
         <style>
           body { font-family: system-ui; text-align: center; padding: 20px; background: #f5f5f5; margin: 0; }
           .container { max-width: 400px; margin: 0 auto; background: white; padding: 40px 20px; border-radius: 15px; }
@@ -353,7 +353,7 @@ async function handleError(request) {
         <div class="container">
           <div class="logo">B</div>
           <h1>Sin conexión</h1>
-          <p>Brasas Smokehouse funciona sin internet.</p>
+          <p>Muñoz Burger funciona sin internet.</p>
           <div class="features">
             <h3>Disponible offline:</h3>
             <ul>
@@ -495,10 +495,10 @@ async function processOfflineOrders() {
  * Push notifications - Simplified
  */
 self.addEventListener('push', event => {
-  const title = 'Brasas Smokehouse';
+  const title = 'Muñoz Burger';
   const options = {
     body: 'Tu pedido está listo!',
-    icon: '/assets/images/logo/brasas-icon-192-192.png',
+    icon: '/assets/images/logo/munoz-icon-192-192.png',
     badge: '/assets/images/favicon/favicon-32x32.png',
     vibrate: [200, 100, 200],
     data: { url: '/' }
