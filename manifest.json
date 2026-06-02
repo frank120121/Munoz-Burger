@@ -1,7 +1,7 @@
 {
-  "name": "Brasas Smokehouse - Carne Ahumada • Drive-Thru",
-  "short_name": "Brasas Smokehouse",
-  "description": "Carne Ahumada • Drive-Thru desde Nogales, Sonora. Ordena, gana puntos, descuentos, producto gratis y disfruta del sabor auténtico.",
+  "name": "Muñoz Burger - Burgers and Fries in Nogales, Sonora",
+  "short_name": "Muñoz Burger",
+  "description": "Burgers and Fries in Nogales, Sonora. Order, earn points, discounts, free products and enjoy the authentic flavor.",
   "lang": "es-MX",
   "start_url": "/?utm_source=web_app_manifest",
   "scope": "/",
