@@ -1,7 +1,7 @@
 // assets/js/modules/config.js
 
 /**
- * Configuration constants for Brasas Smokehouse website
+ * Configuration constants for Muñoz Burger website
  */
 export const CONFIG = {
     ANIMATIONS: {
@@ -13,8 +13,8 @@ export const CONFIG = {
         DEBOUNCE_DELAY: 10
     },
     BUSINESS: {
-        OPEN_TIME: 6.00, // 6:00 AM
-        CLOSE_TIME: 23,   // 11:00 PM
+        OPEN_TIME: 13.00, // 1:00 PM
+        CLOSE_TIME: 21.00,   // 9:00 PM
         ADDRESS: 'Prolongación Álvaro Obregón 4257, Villa Sonora, 84093 Heroica Nogales, Son'
     },
     SELECTORS: {
@@ -29,7 +29,7 @@ export const CONFIG = {
 export const CONTACT_INFO = {
     phone: '+526311093226',
     phoneDisplay: '+52 631 109 3226',
-    email: 'info@eatbrasas.com',
+    email: 'info@munozburger.com',
     whatsappUrl: 'https://wa.me/message/VE4RQVV7SXPSN1',
     address: {
         full: 'Prolongación Álvaro Obregón 4257, Villa Sonora, 84093 Heroica Nogales, Son',

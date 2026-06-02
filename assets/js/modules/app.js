@@ -1,12 +1,12 @@
 /**
- * BRASAS SMOKEHOUSE PWA - MONOLITHIC ARCHITECTURE
+ * Muñoz Burger PWA - MONOLITHIC ARCHITECTURE
  * Optimized for Mexico's mid-range mobile market
  * Performance-first, battery-conscious design
  */
 
 // === CONFIGURATION & CONSTANTS ===
 const APP_CONFIG = {
-  name: 'Brasas Smokehouse',
+  name: 'Muñoz Burger',
   version: '2.0.0',
   market: 'mx-mobile',
   debug: location.hostname === 'localhost',
@@ -116,7 +116,7 @@ class AppState {
 // === STORAGE MANAGER ===
 class LocalStorageManager {
   constructor() {
-    this.prefix = 'brasas_';
+    this.prefix = 'munozburger_';
     this.fallback = new Map(); // In-memory fallback
   }
   
@@ -754,7 +754,7 @@ class UIManager {
     this.setButtonState(button, 'loading');
     
     // Add to cart via global app instance
-    const success = window.brasasApp.cart.addItem(productData);
+    const success = window.munozburgerApp.cart.addItem(productData);
     
     // Update button state
     this.setButtonState(button, success ? 'success' : 'error');
@@ -958,13 +958,13 @@ class UIManager {
     if (!item) return;
     
     const newQuantity = action === 'increase' ? item.quantity + 1 : item.quantity - 1;
-    window.brasasApp.cart.updateQuantity(itemId, newQuantity);
+    window.munozburgerApp.cart.updateQuantity(itemId, newQuantity);
   }
   
   handleRemoveItem(event) {
     const button = event.target;
     const itemId = parseInt(button.dataset.itemId);
-    window.brasasApp.cart.removeItem(itemId);
+    window.munozburgerApp.cart.removeItem(itemId);
   }
   
   updateCartTotal(total) {
@@ -1130,7 +1130,7 @@ class PWAManager {
       
       // Show install prompt after user interaction
       setTimeout(() => {
-        if (!localStorage.getItem('brasas_install_dismissed')) {
+        if (!localStorage.getItem('munozburger_install_dismissed')) {
           this.showInstallPrompt();
         }
       }, 30000); // Wait 30 seconds
@@ -1146,18 +1146,18 @@ class PWAManager {
   showInstallPrompt() {
     const installMessage = `
       <div class="text-center">
-        <div class="text-lg font-bold mb-2">📱 Instalar Brasas Smokehouse</div>
+        <div class="text-lg font-bold mb-2">📱 Instalar Muñoz Burger</div>
         <div class="text-sm mb-4">
           ✅ Acceso rápido desde tu pantalla inicio<br>
           ✅ Funciona sin internet<br>
           ✅ Experiencia nativa optimizada
         </div>
         <div class="flex gap-2 justify-center">
-          <button onclick="window.brasasApp.pwa.installPWA()" 
+          <button onclick="window.munozburgerApp.pwa.installPWA()" 
                   class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm">
             Instalar
           </button>
-          <button onclick="window.brasasApp.pwa.dismissInstall()" 
+          <button onclick="window.munozburgerApp.pwa.dismissInstall()" 
                   class="bg-transparent border border-white/50 text-white px-4 py-2 rounded-lg text-sm">
             Más tarde
           </button>
@@ -1188,7 +1188,7 @@ class PWAManager {
   }
   
   dismissInstall() {
-    localStorage.setItem('brasas_install_dismissed', Date.now() + (7 * 24 * 60 * 60 * 1000)); // 7 days
+    localStorage.setItem('munozburger_install_dismissed', Date.now() + (7 * 24 * 60 * 60 * 1000)); // 7 days
     this.toast.clear();
   }
   
@@ -1197,7 +1197,7 @@ class PWAManager {
       <div class="text-center">
         <div class="font-bold mb-2">🔄 Actualización disponible</div>
         <div class="text-sm mb-3">Nueva versión con mejoras de rendimiento</div>
-        <button onclick="window.brasasApp.pwa.applyUpdate()" 
+        <button onclick="window.munozburgerApp.pwa.applyUpdate()" 
                 class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm">
           Actualizar ahora
         </button>
@@ -1249,7 +1249,7 @@ class PWAManager {
 }
 
 // === MAIN APPLICATION CLASS ===
-class BrasasSmokehouseApp {
+class MuñozBurgerApp {
   constructor() {
     this.state = new AppState();
     this.performance = new PerformanceManager();
@@ -1266,7 +1266,7 @@ class BrasasSmokehouseApp {
   
   async init() {
     try {
-      console.log('🔥 Initializing Brasas Smokehouse PWA...');
+      console.log('🔥 Initializing Muñoz Burger PWA...');
       
       // Setup state subscriptions
       this.setupStateSubscriptions();
@@ -1284,7 +1284,7 @@ class BrasasSmokehouseApp {
       this.updateCurrentYear();
       
       this.initialized = true;
-      console.log('✅ Brasas Smokehouse PWA initialized');
+      console.log('✅ Muñoz Burger PWA initialized');
       
       // Performance monitoring
       this.measureInitializationTime();
@@ -1458,7 +1458,7 @@ class BrasasSmokehouseApp {
 }
 
 // === INITIALIZATION ===
-let brasasApp;
+let munozburgerApp;
 
 // Initialize app when DOM is ready
 if (document.readyState === 'loading') {
@@ -1469,18 +1469,18 @@ if (document.readyState === 'loading') {
 
 async function initializeApp() {
   try {
-    brasasApp = new BrasasSmokehouseApp();
+    munozburgerApp = new MuñozBurgerApp();
     
     // Make globally available
-    window.brasasApp = brasasApp;
+    window.munozburgerApp = munozburgerApp;
     
     // Backward compatibility globals
-    window.copyAddress = () => brasasApp.copyAddress();
-    window.checkBusinessStatus = () => brasasApp.checkBusinessStatus();
-    window.updateBusinessStatus = () => brasasApp.checkBusinessStatus();
+    window.copyAddress = () => munozburgerApp.copyAddress();
+    window.checkBusinessStatus = () => munozburgerApp.checkBusinessStatus();
+    window.updateBusinessStatus = () => munozburgerApp.checkBusinessStatus();
     
     // Wait for initialization
-    await brasasApp.ready();
+    await munozburgerApp.ready();
     
     // Initialize viewport height for mobile
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
@@ -1490,13 +1490,13 @@ async function initializeApp() {
     
     // Development tools
     if (APP_CONFIG.debug) {
-      window.BrasasDebug = {
-        app: brasasApp,
-        state: () => brasasApp.getState(),
-        debug: () => brasasApp.debug(),
+      window.MuñozBurgerDebug = {
+        app: munozburgerApp,
+        state: () => munozburgerApp.getState(),
+        debug: () => munozburgerApp.debug(),
         version: APP_CONFIG.version
       };
-      console.log('🔧 Debug tools available: window.BrasasDebug');
+      console.log('🔧 Debug tools available: window.MuñozBurgerDebug');
     }
     
   } catch (error) {
@@ -1531,7 +1531,7 @@ window.addEventListener('load', () => {
 
 // Export for module systems
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { BrasasSmokehouseApp, APP_CONFIG };
+  module.exports = { MuñozBurgerApp, APP_CONFIG };
 }
 
-console.log('🔥 Brasas Smokehouse PWA Core loaded - Optimized for Mexico mobile market');
+console.log('🔥 Muñoz Burger PWA Core loaded - Optimized for Mexico mobile market');

@@ -216,7 +216,7 @@ class ServiceWorkerManager {
         flag.style.cssText = 'font-size: 20px; margin-right: 8px;';
         
         const title = document.createElement('strong');
-        title.textContent = 'Instalar Brasas Smokehouse';
+        title.textContent = 'Instalar Muñoz Burger';
         
         header.appendChild(flag);
         header.appendChild(title);

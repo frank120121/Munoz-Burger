@@ -3,7 +3,7 @@
 import { CONTACT_INFO } from './config.js';
 
 /**
- * Utility Functions for Brasas Smokehouse website
+ * Utility Functions for Muñoz Burger website
  */
 
 /**
