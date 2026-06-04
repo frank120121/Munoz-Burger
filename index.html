@@ -50,20 +50,16 @@
   <style>
     *,*::before,*::after{box-sizing:border-box}
     body{margin:0;font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:#fff;overflow-x:hidden}
-    .retro-header{position:fixed;top:0;left:0;right:0;z-index:100;background:#0A3161}
-    .retro-header-border{height:4px;background:repeating-linear-gradient(90deg,#B31942 0px 33px,#fff 33px 40px,#B31942 40px 73px)}
-    .retro-header-bar{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 1.25rem;height:64px;gap:1rem}
-    .retro-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:68px;background:#0A3161}
-    .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,49,97,.85) 0%,rgba(10,49,97,.6) 40%,rgba(10,49,97,.82) 75%,rgba(10,49,97,.97) 100%)}
-    .retro-hero-content{position:relative;z-index:3;text-align:center;padding:2.5rem 1.5rem 3.5rem;max-width:820px;width:100%}
-    .retro-hero-title{font-family:'Bebas Neue','Impact','Arial Narrow',sans-serif;font-size:clamp(3.5rem,12vw,8rem);color:#fff;letter-spacing:.03em;line-height:.88;margin:0 0 2rem;text-shadow:5px 5px 0 #B31942,-1px -1px 0 rgba(0,0,0,.3)}
-    .retro-hero-logo{max-width:260px;width:100%;margin:0 auto 1rem;filter:drop-shadow(0 4px 20px rgba(0,0,0,.7))}
-    .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.25rem;padding:14px 36px;border-radius:4px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:56px;border:3px solid transparent;line-height:1}
-    .btn-whatsapp{background:#25D366;color:#fff;border-color:rgba(255,255,255,.6);box-shadow:4px 4px 0 rgba(0,0,0,.25)}
-    .retro-hero-tagline{font-family:'Bebas Neue','Impact',sans-serif;font-size:clamp(1rem,3.5vw,1.6rem);color:#F4C430;letter-spacing:.3em;margin:0 0 .25rem}
-    .checkered{height:24px;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
-    .retro-hero-strip-top{position:absolute;top:68px;left:0;right:0;height:24px;z-index:2;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
-    .retro-hero-strip-bottom{position:absolute;bottom:0;left:0;right:0;height:24px;z-index:2;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
+    .retro-header{position:fixed;top:0;left:0;right:0;z-index:100;background:#0A3161;border-bottom:3px solid #B31942}
+    .retro-header-bar{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 1.5rem;height:64px;gap:1rem}
+    .retro-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:67px;background:#0A3161}
+    .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(170deg,rgba(10,49,97,.88) 0%,rgba(10,49,97,.65) 50%,rgba(10,49,97,.92) 100%)}
+    .retro-hero-content{position:relative;z-index:2;text-align:center;padding:3rem 1.5rem 4rem;max-width:760px;width:100%}
+    .retro-hero-title{font-family:'Bebas Neue','Impact','Arial Narrow',sans-serif;font-size:clamp(4rem,13vw,9rem);color:#fff;letter-spacing:.02em;line-height:.85;margin:0 0 2.5rem}
+    .retro-hero-logo{max-width:240px;width:100%;margin:0 auto 1.5rem;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5))}
+    .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.2rem;padding:14px 34px;border-radius:6px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:52px;border:2px solid transparent;line-height:1}
+    .btn-whatsapp{background:#25D366;color:#fff;border-color:#25D366;box-shadow:4px 4px 0 rgba(0,0,0,.2)}
+    .retro-hero-tagline{font-family:'Bebas Neue','Impact',sans-serif;font-size:clamp(.9rem,2.5vw,1.3rem);color:rgba(255,255,255,.55);letter-spacing:.4em;margin:0 0 .5rem}
   </style>
 
   <link rel="preload" href="/assets/css/retro.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -101,7 +97,6 @@
 
   <!-- ═══ HEADER ═══ -->
   <header class="retro-header" role="banner">
-    <div class="retro-header-border" aria-hidden="true"></div>
     <div class="retro-header-bar">
 
       <a href="#home" class="retro-logo-link" aria-label="Muñoz Burger — Inicio">
@@ -179,7 +174,6 @@
       <source src="/assets/videos/hero-desktop.mp4"  type="video/mp4">
     </video>
     <div class="retro-hero-overlay" aria-hidden="true"></div>
-    <div class="retro-hero-strip-top" aria-hidden="true"></div>
 
     <div class="retro-hero-content">
 
@@ -220,7 +214,6 @@
       </div>
     </div>
 
-    <div class="retro-hero-strip-bottom" aria-hidden="true"></div>
   </section>
 
 
@@ -257,8 +250,6 @@
 
 
     <!-- ── Menu ── -->
-    <div class="checkered" aria-hidden="true"></div>
-
     <section id="menu" class="retro-section retro-section-white" aria-labelledby="menu-heading">
       <div class="retro-container">
 
@@ -446,8 +437,6 @@
 
 
     <!-- ── Location ── -->
-    <div class="checkered-navy" aria-hidden="true"></div>
-
     <section id="location" class="retro-section retro-section-cream" aria-labelledby="location-heading">
       <div class="retro-container">
 
@@ -579,8 +568,6 @@
 
 
   <!-- ═══ FOOTER ═══ -->
-  <div class="pin-stripe" aria-hidden="true"></div>
-
   <footer class="retro-footer" role="contentinfo">
     <div class="retro-footer-grid">
 
