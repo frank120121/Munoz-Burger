@@ -668,6 +668,57 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 6px;
   margin-top: auto;
 }
+
+.retro-card-price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--red);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-top: 0.75rem;
+}
+
+/* Row-style cards (papas & bebidas) */
+.retro-menu-grid-wide {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.retro-menu-card-row {
+  flex-direction: row;
+}
+.retro-card-body-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.retro-card-body-row .retro-card-price {
+  flex-shrink: 0;
+}
+
+.retro-drinks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+.retro-drink-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #4B5563;
+  font-weight: 600;
+  padding: 2px 0;
+  border-bottom: 1px dashed #E5E7EB;
+}
+.retro-drink-row:last-child { border-bottom: none; }
+.retro-drink-price {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--red);
+  letter-spacing: 0.05em;
+}
+
 .retro-tag {
   background: #F3F4F6;
   color: var(--navy);
