@@ -1,1082 +1,786 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <!-- Essential Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="-Muñoz Burger - Nogales, Sonora.  auténticas smash burgers estilo California: carne 100% de res sin congelar, queso americano real e ingredientes frescos en un suave pan de papa. ">
-    <meta name="keywords" content="burgers, fries, smash burger, sonora, nogales, beef tallow, sea salt, proximamente, nuevo restaurante, Muñoz Burger">
-    <meta name="author" content="Muñoz Burger">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Coming Soon Specific -->
-    <meta name="status" content="coming-soon">
-    <meta property="business:contact_data:locality" content="Nogales">
-    <meta property="business:contact_data:region" content="Sonora">
-    <meta property="business:contact_data:country_name" content="Mexico">
-    
-    <!-- Mobile Optimizations for Mexican Market -->
-    <meta name="format-detection" content="telephone=yes">
-    <meta name="format-detection" content="address=yes">
-    
-    <!-- Title -->
-    <title>Próximamente - Muñoz Burger | Burgers and Fries</title>
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://munozburger.com">
-    <meta property="og:title" content="Próximamente - Muñoz Burger | Burgers and Fries">
-    <meta property="og:description" content="Nuevo restaurante en Nogales, Sonora. Smash burgers auténticas con carne 100% de res sin congelar, queso americano real e ingredientes frescos en un suave pan de papa.">
-    <meta property="og:image" content="https://munozburger.com/assets/images/logo/logo-og-1200-630.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_MX">
-    <meta property="og:site_name" content="Muñoz Burger">
-    
-    <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#ad2118">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Muñoz Burger">
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-512-512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-512-512.png">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
-    <link rel="manifest" href="/manifest.json">
-    
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&display=swap" 
-        rel="stylesheet" 
-        media="print" 
-        onload="this.media='all'"
-    >
+  <!-- Essential Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muñoz Burger — Smash burgers estilo California en Nogales, Sonora. Carne 100% de res fresca, queso americano real e ingredientes frescos. Lun–Dom 1pm–9pm.">
+  <meta name="keywords" content="burgers, smash burger, nogales, sonora, muñoz burger, hamburguesas">
+  <meta name="author"  content="Muñoz Burger">
+  <meta name="robots"  content="index, follow">
 
-    <!-- Fallback for browsers that don't support onload -->
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    </noscript>
-    
-    <!-- DNS Prefetch for External Resources -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://wa.me">
-    <link rel="dns-prefetch" href="https://web.whatsapp.com">
-    
-    <!-- Critical CSS (inline - only essential styles for above-the-fold) -->
-    <style>
-    /* Critical styles - only what's needed for hero section */
-    *, ::before, ::after {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e5e7eb;
-    }
+  <title>Muñoz Burger | Smash Burgers &amp; Fries · Nogales, Sonora</title>
 
-    body {
-    margin: 0;
-    line-height: inherit;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
-    background-color: white;
-    overflow-x: hidden;
-    font-display: swap;
-    }
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://munozburger.com">
+  <meta property="og:title"       content="Muñoz Burger | Smash Burgers &amp; Fries · Nogales, Sonora">
+  <meta property="og:description" content="Auténticas smash burgers estilo California en Nogales, Sonora. Carne fresca nunca congelada, queso americano real. Lun–Dom 1pm–9pm.">
+  <meta property="og:image"       content="https://munozburger.com/assets/images/logo/logo-og-1200-630.png">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="es_MX">
+  <meta property="og:site_name"   content="Muñoz Burger">
 
-    .font-body { 
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
-    font-display: swap;
-    }
+  <!-- PWA -->
+  <meta name="theme-color"                    content="#B31942">
+  <meta name="mobile-web-app-capable"         content="yes">
+  <meta name="apple-mobile-web-app-capable"   content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title"     content="Muñoz Burger">
+  <meta name="format-detection"               content="telephone=yes">
 
-    @font-face {
-    font-family: 'Inter Fallback';
-    src: local('Arial');
-    size-adjust: 107%;
-    ascent-override: 90%;
-    descent-override: 22%;
-    line-gap-override: 0%;
-    }
+  <!-- Favicons & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-512-512.png">
+  <link rel="icon" type="image/x-icon"           href="/assets/images/favicon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
 
-    .hero-title-main {
-    margin-bottom: 1rem;
-    font-weight: 900;
-    line-height: 1.25;
-    color: rgb(255 255 255);
-    font-size: clamp(2rem, 6vw, 4rem);
-    min-height: 2.5rem;
-    }
+  <!-- Google Fonts — Bebas Neue (display) + Nunito (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  >
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  </noscript>
 
-    .above-fold-container {
-    height: 100vh;
-    height: 100dvh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    }
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://wa.me">
 
-    .home-section {
-    position: relative;
-    display: flex;
-    min-height: 0px;
-    flex: 1 1 0%;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    }
+  <!-- Critical inline CSS (above-the-fold only) -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:#fff;overflow-x:hidden}
+    .retro-header{position:fixed;top:0;left:0;right:0;z-index:100;background:#0A3161}
+    .retro-header-border{height:4px;background:repeating-linear-gradient(90deg,#B31942 0px 33px,#fff 33px 40px,#B31942 40px 73px)}
+    .retro-header-bar{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 1.25rem;height:64px;gap:1rem}
+    .retro-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:68px;background:#0A3161}
+    .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,49,97,.80) 0%,rgba(10,49,97,.55) 40%,rgba(10,49,97,.80) 75%,rgba(10,49,97,.95) 100%)}
+    .retro-hero-content{position:relative;z-index:3;text-align:center;padding:2.5rem 1.5rem 3.5rem;max-width:820px;width:100%}
+    .retro-hero-title{font-family:'Bebas Neue','Impact','Arial Narrow',sans-serif;font-size:clamp(3.5rem,12vw,8rem);color:#fff;letter-spacing:.03em;line-height:.88;margin:0 0 2rem;text-shadow:5px 5px 0 #B31942,-1px -1px 0 rgba(0,0,0,.3)}
+    .retro-hero-logo{max-width:300px;width:100%;margin:0 auto 1.25rem;filter:drop-shadow(0 4px 16px rgba(0,0,0,.6))}
+    .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.25rem;padding:14px 36px;border-radius:4px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:56px;border:3px solid transparent;line-height:1}
+    .btn-whatsapp{background:#25D366;color:#fff;border-color:rgba(255,255,255,.6);box-shadow:4px 4px 0 rgba(0,0,0,.25)}
+    .retro-hero-tagline{font-family:'Bebas Neue','Impact',sans-serif;font-size:clamp(1rem,3.5vw,1.75rem);color:#F4C430;letter-spacing:.35em;margin:0 0 .25rem}
+    .checkered{height:24px;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
+    .retro-hero-strip-top{position:absolute;top:68px;left:0;right:0;height:24px;z-index:2;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
+    .retro-hero-strip-bottom{position:absolute;bottom:0;left:0;right:0;height:24px;z-index:2;background-image:repeating-conic-gradient(#B31942 0% 25%,#fff 0% 50%);background-size:24px 24px}
+  </style>
 
-    .hero-background {
-    position: absolute;
-    inset: 0px;
-    z-index: 0;
-    }
+  <!-- Full CSS (non-blocking) -->
+  <link rel="preload" href="/assets/css/retro.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/retro.css"></noscript>
 
-    .hero-overlay {
-    position: absolute;
-    inset: 0px;
-    z-index: 10;
-    background-color: rgb(0 0 0 / 0.4);
-    }
-
-    .hero-content {
-    position: relative;
-    z-index: 20;
-    }
-
-
-    .hero-badge {
-    display: inline-block;
-    border-width: 4px;
-    border-color: rgb(255 255 255);
-    padding: 0.5rem 1.5rem;
-    font-weight: 900;
-    color: rgb(255 255 255);
-    /* Reserve space */
-    min-height: 2.5rem;
-    min-width: 280px;
-    text-align: center;
-    }
-
-    .hero-title-main {
-    margin-bottom: 1rem;
-    font-weight: 900;
-    line-height: 1.25;
-    color: rgb(255 255 255);
-    font-size: clamp(2rem, 6vw, 4rem);
-    /* Reserve space - be more specific */
-    min-height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    .hero-logo {
-    width: 320px;
-    height: 107px;
-    max-width: 100%;
-    height: auto;
-    }
-
-    /* Ensure button doesn't shift */    .hero-cta-button {
-    min-height: 4rem !important;
-    min-width: 280px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    }
-
-        .text-center { text-align: center; }
-    .flex { display: flex; }
-    .flex-col { flex-direction: column; }
-    .items-center { align-items: center; }
-    .justify-center { justify-content: center; }
-    .w-full { width: 100%; }
-    .h-auto { height: auto; }
-    .max-w-7xl { max-width: 80rem; }
-    .max-w-4xl { max-width: 56rem; }
-    .mx-auto { margin-left: auto; margin-right: auto; }
-    .px-4 { padding-left: 1rem; padding-right: 1rem; }
-    .mb-6 { margin-bottom: 1.5rem; }
-    .space-y-2 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 0.5rem;
-    }
-
-    .bg-primary-dark { background-color: rgb(138 26 19); }
-    .text-white { color: rgb(255 255 255); }
-    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-    .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-    .rounded-2xl { border-radius: 1rem; }
-    .font-bold { font-weight: 700; }
-    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-
-    @media (min-width: 640px) {
-    .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-    .sm\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-    .sm\:flex-row { flex-direction: row; }
-    }
-
-    @media (min-width: 1024px) {
-    .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-    .lg\:text-left { text-align: left; }
-    .lg\:items-start { align-items: flex-start; }
-    }
-    </style>
-
-    <!-- Load full CSS asynchronously (non-blocking) -->
-    <link 
-        rel="preload" 
-        href="/assets/css/main.css" 
-        as="style" 
-        onload="this.onload=null;this.rel='stylesheet'"
-    >
-
-    <!-- Fallback for browsers that don't support preload -->
-    <noscript>
-        <link rel="stylesheet" href="/assets/css/main.css">
-    </noscript>
-    <!-- Structured Data for Restaurant -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Muñoz Burger",
-        "description": "Muñoz Burger - Nogales, Sonora. Auténticas smash burgers estilo California: carne 100% de res sin congelar, queso americano real e ingredientes frescos en un suave pan de papa. Próximamente en Nogales, Sonora.",
-        "url": "https://munozburger.com",
-        "telephone": "+526311093226",
-        "email": "info@munozburger.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Nogales",
-            "addressRegion": "Sonora",
-            "addressCountry": "MX"
-        },
-        "servesCuisine": "Mexican",
-        "priceRange": "$$",
-        "image": "https://munozburger.com/assets/images/logo/logo-og-1200×630.png",
-        "openingHours": [],
-        "hasMenu": {
-            "@type": "Menu",
-            "name": "Muñoz Burger Menu",
-        },
-        "potentialAction": {
-            "@type": "ReserveAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://wa.me/message/VE4RQVV7SXPSN1",
-                "actionPlatform": [
-                    "http://schema.org/DesktopWebPlatform",
-                    "http://schema.org/MobileWebPlatform"
-                ]
-            },
-            "result": {
-                "@type": "Reservation",
-                "name": "Notificaciones de lanzamiento"
-            }
-        }
-    }
-    </script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Muñoz Burger",
+    "description": "Auténticas smash burgers estilo California en Nogales, Sonora.",
+    "url": "https://munozburger.com",
+    "telephone": "+526311093226",
+    "email": "info@munozburger.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prolongación Álvaro Obregón 4257",
+      "addressLocality": "Nogales",
+      "addressRegion": "Sonora",
+      "postalCode": "84093",
+      "addressCountry": "MX"
+    },
+    "servesCuisine": "American",
+    "priceRange": "$$",
+    "openingHours": ["Mo-Su 13:00-21:00"],
+    "image": "https://munozburger.com/assets/images/logo/logo-og-1200-630.png"
+  }
+  </script>
 </head>
 
-<body class="font-body bg-white overflow-x-hidden">
-    <!-- Skip Navigation for Accessibility -->
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    
-    <!-- Screen Reader Announcements -->
-    <div id="general-sr-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
-    
-    <!-- ABOVE THE FOLD CONTAINER -->
-    <div class="above-fold-container">
-        <!-- Hero Section -->
-        <section id="home" class="home-section" role="banner">            
-            <div class="absolute inset-0 gradient-bg"></div>
+<body>
+  <!-- Skip Nav (Accessibility) -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-            <!-- Hero Overlay -->
-            <div class="hero-overlay" aria-hidden="true"></div>
-            
-            <!-- Hero Content -->
-            <div class="hero-content w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col items-center justify-center min-h-screen py-8 sm:py-12 lg:py-16">
+  <!-- SR Announcements -->
+  <div id="general-sr-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
-                    <!-- Hero Badge -->
-                    <div class="hero-badge mb-8 lg:mb-12">
-                        <span class="font-black">Muñoz Burger EN NOGALES, SONORA</span>
-                    </div>
-                    
-                    <!-- Logo -->
-                    <div class="fade-in mb-16 lg:mb-24">
-                        <a href="#home" class="inline-block" aria-label="Muñoz Burger - Ir al inicio">
-                            <img 
-                                src="/assets/images/logo/munoz-burger-logo-300-100.png"
-                                srcset="/assets/images/logo/munoz-burger-logo-300-100.png 2x, /assets/images/logo/munoz-burger-logo-300-100.png 3x"
-                                alt="Muñoz Burger"
-                                class="w-auto h-auto object-contain hover:scale-105 transition-all durat3on-100 max-w-xs lg:max-w-sm mx-auto"
-                                fetchpriority="high"
-                                loading="eager"
-                                width="320"
-                                height="107"
-                            >
-                        </a>
-                    </div>
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="retro-header" role="banner">
+    <!-- Red stripe at very top -->
+    <div class="retro-header-border" aria-hidden="true"></div>
 
-                    <!-- Main Message -->
-                    <div class="text-center space-y-2 mb-6">
-                        <h1 class="hero-title-main">Consigue tu Descuento Exclusivo de Apertura Ahora</h1>
-                    </div>
-                    
-                    <!-- CTA Button -->
-                    <div class="flex flex-col items-center w-full max-w-sm mx-auto">
-                        <a href="https://wa.me/message/VE4RQVV7SXPSN1"
-                        target="_blank"
-                        class="hero-cta-button inline-flex items-center justify-center text-white px-6 sm:px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shine space-x-3 w-full sm:w-auto"
-                        style="background-color: #25D366 !important; min-height: 4rem; min-width: 280px;"
-                        onmouseover="this.style.backgroundColor='#128C7E'"
-                        onmouseout="this.style.backgroundColor='#25D366'"
-                        aria-label="Obtener descuento exclusivo por WhatsApp">
-                            
-                            <!-- Official WhatsApp Logo SVG -->
-                            <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
-                            </svg>
-                            <span>¡Quiero Mi Descuento!</span>
-                        </a>
-                        
-                        
-                        <!-- Trust Message -->
-                        <div class="text-center mt-4">
-                            <p class="text-sm text-white font-medium px-2">
-                                Es gratis, sin spam y solo para las primeras 50 personas
-                            </p>
-                        </div>
-                        <!-- Footer text -->
-                        <div class="text-center mt-12">
-                            <p class="text-sm text-white font-medium px-2">
-                                 © 2025 Muñoz Burger. Nogales, Sonora.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>        
+    <div class="retro-header-bar">
+
+      <!-- Logo -->
+      <a href="#home" class="retro-logo-link" aria-label="Muñoz Burger — Inicio">
+        <img
+          src="/assets/images/logo/munoz-burger-icon-64.png"
+          srcset="/assets/images/logo/munoz-burger-icon-128.png 2x"
+          alt="Muñoz Burger"
+          class="retro-logo-icon"
+          loading="eager"
+          width="46" height="46"
+        >
+        <span class="retro-logo-text">
+          Muñoz Burger
+          <small>Nogales, Sonora</small>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="retro-nav" role="navigation" aria-label="Navegación principal">
+        <a href="#menu"     class="retro-nav-link">MENÚ</a>
+        <a href="#location" class="retro-nav-link">UBICACIÓN</a>
+        <a href="#contacto" class="retro-nav-link">CONTACTO</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="retro-header-cta">
+        <a
+          href="https://wa.me/message/VE4RQVV7SXPSN1"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-retro btn-whatsapp btn-sm"
+          aria-label="Ordenar por WhatsApp"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+          </svg>
+          PEDIR YA
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button
+        class="retro-mobile-btn"
+        id="mobileToggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div><!-- /.retro-header-bar -->
+
+    <!-- Mobile Nav Panel -->
+    <nav id="mobileMenu" class="retro-mobile-menu" aria-label="Navegación móvil" aria-hidden="true">
+      <a href="#menu"     onclick="closeMobileMenu()">MENÚ</a>
+      <a href="#location" onclick="closeMobileMenu()">UBICACIÓN</a>
+      <a href="#contacto" onclick="closeMobileMenu()">CONTACTO</a>
+      <a
+        href="https://wa.me/message/VE4RQVV7SXPSN1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mobile-cta btn-retro btn-whatsapp"
+        onclick="closeMobileMenu()"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+        PEDIR POR WHATSAPP
+      </a>
+    </nav>
+  </header><!-- /.retro-header -->
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="retro-hero" role="banner" aria-label="Inicio">
+
+    <!-- Background video -->
+    <video
+      class="retro-hero-video"
+      autoplay muted loop playsinline
+      poster="/assets/images/hero/hero-poster-desktop-1920-1080.jpg"
+      aria-hidden="true"
+    >
+      <source src="/assets/videos/hero-desktop.webm" type="video/webm">
+      <source src="/assets/videos/hero-desktop.mp4"  type="video/mp4">
+    </video>
+
+    <!-- Dark navy gradient overlay -->
+    <div class="retro-hero-overlay" aria-hidden="true"></div>
+
+    <!-- Top checkerboard strip -->
+    <div class="retro-hero-strip-top" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="retro-hero-content">
+
+      <!-- Eyebrow badge -->
+      <div class="retro-hero-eyebrow" aria-hidden="true">
+        ★ &nbsp; NUEVO EN NOGALES, SONORA &nbsp; ★
+      </div>
+
+      <!-- Logo -->
+      <img
+        src="/assets/images/logo/munoz-burger-logo-300-100.png"
+        srcset="/assets/images/logo/munoz-burger-logo-300-100.png 2x"
+        alt="Muñoz Burger"
+        class="retro-hero-logo"
+        fetchpriority="high"
+        loading="eager"
+        width="300" height="100"
+      >
+
+      <!-- Sub tagline -->
+      <p class="retro-hero-tagline">SMASH BURGERS · ESTILO CALIFORNIA</p>
+
+      <!-- Main headline -->
+      <h1 class="retro-hero-title">BURGERS<br>&amp; FRIES</h1>
+
+      <!-- Primary CTA -->
+      <div class="retro-hero-cta">
+        <a
+          href="https://wa.me/message/VE4RQVV7SXPSN1"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-retro btn-whatsapp"
+          aria-label="Ordenar por WhatsApp — abre en nueva pestaña"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+          </svg>
+          ¡ORDENAR POR WHATSAPP!
+        </a>
+        <p class="retro-hero-trust">Gratis · Sin spam · Solo para las primeras 50 personas</p>
+      </div>
+
+      <!-- Hours + Phone info line -->
+      <div class="retro-hero-info">
+        <span>🕐 Lun – Dom &nbsp; 1:00 pm – 9:00 pm</span>
+        <span class="sep">·</span>
+        <a href="tel:+526311093226">📞 (631) 109-3226</a>
+      </div>
     </div>
 
-    <!-- Toast Container -->
-    <div 
-        id="toast-container" 
-        class="fixed top-20 right-4 z-50 space-y-3"
-        role="region"
-        aria-label="Notificaciones"
-        aria-live="polite"
-    ></div>
+    <!-- Bottom checkerboard strip -->
+    <div class="retro-hero-strip-bottom" aria-hidden="true"></div>
+  </section><!-- /#home -->
 
-    <header class="site-header fixed w-full top-0 z-50 bg-white transition-all duration-300 opacity-0 invisible">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
 
-                <!-- MOBILE LAYOUT (lg:hidden) -->
-                <div class="flex items-center space-x-4 lg:hidden w-full justify-between">
-                    <!-- Mobile Logo -->
-                    <a href="#home" class="flex items-center" aria-label="Muñoz Burger - Ir al inicio">
-                        <img 
-                            src="/assets/images/logo/munoz-burger-icon-64.png"
-                            srcset="/assets/images/logo/munoz-burger-icon-128.png 2x"
-                            alt="Muñoz Burger"
-                            class="w-12 h-12 rounded-xl hover:scale-105 transition-all durat3on-100 shadow-sm"
-                            loading="eager"
-                        >
-                    </a>
+  <!-- Toast container (used by JS) -->
+  <div
+    id="toast-container"
+    role="region"
+    aria-label="Notificaciones"
+    aria-live="polite"
+  ></div>
 
-                    <!-- Mobile Menu Toggle -->
-                    <button 
-                        class="text-gray-700 mobile-menu-toggle p-2" 
-                        aria-label="Abrir menú de navegación" 
-                        aria-expanded="false"
-                        aria-controls="mobile-navigation"
-                    >
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
 
-                <!-- DESKTOP LAYOUT (hidden lg:flex) -->
-                <!-- Desktop Logo -->
-                <div class="hidden lg:flex items-center">
-                    <a href="#home" class="flex items-center" aria-label="Muñoz Burger - Ir al inicio">
-                        <img 
-                            src="/assets/images/logo/munoz-burger-icon-256.png"
-                            srcset="/assets/images/logo/munoz-burger-icon-256.png 2x"
-                            alt="Muñoz Burger"
-                            class="w-12 h-12 rounded-xl hover:scale-105 transition-all durat3on-100 shadow-sm"
-                            loading="eager"
-                        >
-                    </a>
-                </div>
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main id="main-content" role="main">
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center space-x-8" role="navigation" aria-label="Navegación principal">
-                    <a href="#menu" class="nav-link active">MENÚ</a>
-                    <a href="#contacto" class="nav-link">EVENTOS</a>
-                    <a href="#rewards" class="nav-link">REWARDS</a>
-                </nav>
+    <!-- ── Quick Info Bar ── -->
+    <div class="quick-bar" role="complementary" aria-label="Información rápida">
 
-                <!-- Desktop Location -->
-                <div class="hidden lg:flex items-center space-x-6">
-                    <a href="#location" class="location-picker" aria-label="Ubicación de recogida: Nogales, Sonora">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24.17" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 0a7.875 7.875 0 0 1 6.831 11.795L12.09 24.17 5.164 11.794a7.88 7.88 0 0 1-1.039-3.919A7.875 7.875 0 0 1 12 0zm0 11.794a3.92 3.92 0 1 0 0-7.838 3.92 3.92 0 0 0 0 7.838z"/>
-                        </svg>
-                        <div class="text-sm">
-                            <div class="font-bold text-sm">Recoger en</div>
-                            <div class="text-gray-600 text-sm">Nogales, Sonora</div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-navigation" class="mobile-menu fixed inset-0 bg-white z-40 lg:hidden" aria-hidden="true">
-                <div class="flex flex-col h-full">
-                    <div class="flex justify-end p-4">
-                        <button 
-                            class="mobile-menu-toggle text-gray-700 p-2" 
-                            aria-label="Cerrar menú de navegación"
-                        >
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav class="flex-1 px-6 py-4 space-y-6" role="navigation" aria-label="Navegación móvil">
-                        <a href="#menu" class="nav-link block py-3 text-lg font-bold">MENÚ</a>
-                        <a href="#catering" class="nav-link block py-3 text-lg font-bold">EVENTOS</a>
-                        <a href="#rewards" class="nav-link block py-3 text-lg font-bold">REWARDS</a>
-                    </nav>
-                </div>
-            </div>
+      <div class="quick-bar-item">
+        <span class="quick-bar-icon" aria-hidden="true">🕐</span>
+        <div class="quick-bar-text">
+          <strong>HORARIO</strong>
+          <span>Lun – Dom · 1:00 pm – 9:00 pm</span>
         </div>
-    </header>
-    <!-- Main Content -->
-    <main id="main-content" role="main">
+      </div>
 
-        <!-- Loyalty Section -->
-        <section class="loyalty-section-compact" role="complementary" aria-label="Programa de lealtad">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full">
-                <div class="loyalty-content">
-                    <!-- Icon -->
-                    <div class="loyalty-icon" aria-hidden="true">
-                        <img 
-                            src="/assets/images/logo/munoz-burger-icon-64.png"
-                            srcset="/assets/images/logo/munoz-burger-icon-128.png 2x"
-                            alt=""
-                            class="w-auto h-auto rounded-lg object-contain"
-                            loading="lazy"
-                        >
-                    </div>
-                    
-                    <!-- Text -->
-                    <h2 class="loyalty-text">
-                        ÚNETE A CLUB MUÑOZ. RECIBE DESCUENTOS.
-                    </h2>
-                </div>
+      <div class="quick-bar-item">
+        <span class="quick-bar-icon" aria-hidden="true">📍</span>
+        <div class="quick-bar-text">
+          <strong>DIRECCIÓN</strong>
+          <span>Villa Sonora, Nogales, Sonora</span>
+        </div>
+      </div>
+
+      <div class="quick-bar-item">
+        <a href="tel:+526311093226" aria-label="Llamar al restaurante: 631 109 3226">
+          <span class="quick-bar-icon" aria-hidden="true">📞</span>
+          <div class="quick-bar-text">
+            <strong>LLAMAR</strong>
+            <span>(631) 109-3226</span>
+          </div>
+        </a>
+      </div>
+
+    </div><!-- /.quick-bar -->
+
+
+    <!-- ── Menu Section ── -->
+    <div class="checkered" aria-hidden="true"></div>
+
+    <section id="menu" class="retro-section retro-section-white" aria-labelledby="menu-heading">
+      <div class="retro-container">
+
+        <div class="section-header-center">
+          <div class="retro-badge" aria-hidden="true">BURGERS &amp; FRIES</div>
+          <h2 id="menu-heading" class="retro-section-title">NUESTRO <span class="accent">MENÚ</span></h2>
+          <p class="retro-section-sub">
+            Pide en el mostrador, toma asiento y disfruta la auténtica smash burger californiana en la frontera.
+          </p>
+        </div>
+
+
+        <!-- COMBOS -->
+        <div class="retro-category-rule" aria-label="Categoría: Combos">COMBOS</div>
+        <div class="retro-menu-grid">
+
+          <article class="retro-menu-card">
+            <div class="retro-card-header">
+              <h3 class="retro-card-name">Combo 1</h3>
+              <span class="retro-card-pill">ESTRELLA</span>
             </div>
-        </section>
-        <!-- Menu Section -->
-        <section id="menu" class="section-padding bg-gray-50" aria-labelledby="menu-heading">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center mb-16 fade-in">
-                    <span class="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6 uppercase tracking-wide">
-                        Burgers & Fries
-                    </span>
-                    <h2 id="menu-heading" class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
-                        Hamburguesas <span class="text-gradient bg-gradient-to-r from-primary to-orange-600 bg-clip-text text-transparent">Clasicas</span>
-                    </h2>
-                    <p class="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                       Pásate por una comida rica, rápida y hecha al modo tradicional — pide en el mostrador, toma asiento y prueba la verdadera smash burger californiana en la frontera.
-                    </p>
-                    <div class="inline-flex items-center bg-amber-50 border-2 border-am3er-100 rounded-2xl px-6 py-4">
-                        <div class="w-3 h-3 bg-amber-400 rounded-full animate-pulse mr-3"></div>
-                        <span class="text-amber-700 font-semibold text-lg">Pídelo así de fácil</span>
-                    </div>
-                </div>
-
-                <!-- Combo Category Preview Grid -->
-                <div id="combo-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-    
-                    <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 fade-in" 
-                        data-title="Combos" 
-                        data-description="Nuestro combo estrella. Una clásica Muñoz Doble: smash burger estilo California, acompañada de papas a la francesa crujientes y la bebida de tu elección.">
-                        <div class="aspect-w-16 aspect-h-10 relative">
-                            <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                alt="Combo 1" 
-                                class="w-full h-48 object-cover"
-                                loading="lazy">
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Combo 1</h4>
-                            <p class="text-gray-600 text-sm mb-4">Nuestro combo estrella. Una clásica Muñoz Doble: smash burger estilo California, acompañada de papas a la francesa crujientes y la bebida de tu elección.</p>
-                        </div>
-                    </div>
-                    <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 fade-in" 
-                        data-title="Combo 2" 
-                        data-description="Una clásica smash cheeseburger estilo California, acompañada de papas a la francesa crujientes y la bebida de tu elección.">
-                        <div class="aspect-w-16 aspect-h-10 relative">
-                            <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                alt="Combo 2" 
-                                class="w-full h-48 object-cover"
-                                loading="lazy">
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Combo 2</h4>
-                            <p class="text-gray-600 text-sm mb-4">Una clásica smash cheeseburger estilo California, acompañada de papas a la francesa crujientes y la bebida de tu elección.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center mb-16 fade-in">
-                    <span class="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6 uppercase tracking-wide">
-                        Hamburguesas
-                    </span>
-                </div>
-                <!-- Hamburguesas Preview Grid -->
-                <div id="hamburguesas-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                    
-                    <!-- Hamburguesas Category -->
-                    <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 fade-in" 
-                        data-title="Muñoz Doble" 
-                        data-description="Nuestra Muñoz Doble lleva dos carnes 100% de res, dos rebanadas de auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa, bien apilada en un pan de papa Martin's.">
-                        <div class="aspect-w-16 aspect-h-10 relative">
-                            <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                alt="Combo 1" 
-                                class="w-full h-48 object-cover"
-                                loading="lazy">
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Muñoz Doble</h4>
-                            <p class="text-gray-600 text-sm mb-4">Nuestra Muñoz Doble lleva dos carnes 100% de res, dos rebanadas de auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa, bien apilada en un pan de papa Martin's.</p>
-                        </div>
-                    </div>
-
-                    <div class="product-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 fade-in" 
-                        data-title="Cheeseburger" 
-                        data-description="Clásica smash cheeseburger estilo California: una carne 100% de res, auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa en un pan de papa Martin's.">
-                        <div class="aspect-w-16 aspect-h-10 relative">
-                            <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                alt="Cheeseburger" 
-                                class="w-full h-48 object-cover"
-                                loading="lazy">
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Cheeseburger</h4>
-                            <p class="text-gray-600 text-sm mb-4">Clásica smash cheeseburger estilo California: una carne 100% de res, auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa en un pan de papa Martin's.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Features -->
-                <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12 mb-16 border border-gray-100">
-                    <div class="text-center mb-12">
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                            ¿Qué puedes esperar?
-                        </h3>
-                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Cada hamburguesa se prepara al momento
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="feature-highlight">
-                            <div class="aspect-w-16 aspect-h-10 relative">
-                                <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                    alt="Bebidas" 
-                                    class="w-full h-48 object-cover"
-                                    loading="lazy">
-                            </div>
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Carne Nunca Congelada</h4>
-                            <p class="text-gray-600">Utilizamos carne fresca de primera calidad, nunca congelada, para garantizar el mejor sabor y textura</p>
-                        </div>
-
-                            <div class="feature-highlight">
-                                <div class="aspect-w-16 aspect-h-10 relative">
-                                    <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                        alt="Bebidas" 
-                                        class="w-full h-48 object-cover"
-                                        loading="lazy">
-                                </div>
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Ingredientes Frescos</h4>
-                            <p class="text-gray-600">Productos seleccionados diariamente para garantizar la mejor calidad</p>
-                        </div>
-
-                        <div class="feature-highlight sm:col-span-2 lg:col-span-1">
-                            <div class="aspect-w-16 aspect-h-10 relative">
-                                <img src="/assets/images/logo/munoz-burger-logo-full-300-100.png" 
-                                    alt="Bebidas" 
-                                    class="w-full h-48 object-cover"
-                                    loading="lazy">
-                            </div>
-                            <h4 class="text-xl font-bold text-gray-900 mb-2">Tradición</h4>
-                            <p class="text-gray-600">Preparadas con pasión y dedicación, como las hacían las hamburgueserías clásicas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Notification Signup -->
-                <div class="bg-gradient-to-r from-primary to-orange-600 rounded-3xl p-8 sm:p-12 text-white text-center">
-                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-                        ¡Obtén contenido, descuentos y promociones exclusivas!
-                    </h3>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
-                        <a href="https://wa.me/message/VE4RQVV7SXPSN1"
-                        target="_blank"
-                        class="inline-flex items-center justify-center bg-white text-primary px-6 sm:px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shine space-x-3 w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 focus:ring-offset-2">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
-                            </svg>
-                            <span>Notificarme por WhatsApp</span>
-                        </a>
-                    </div>
-                    <p class="text-sm text-white/70 mt-4">
-                        No spam, solo actualizaciones importantes sobre Muñoz Burger
-                    </p>
-                </div>
+            <div class="retro-card-body">
+              <p class="retro-card-desc">
+                Nuestra <strong>Muñoz Doble</strong> — smash burger estilo California —
+                con papas a la francesa crujientes y la bebida de tu elección.
+              </p>
+              <div class="retro-card-tags">
+                <span class="retro-tag">Doble carne</span>
+                <span class="retro-tag">Papas</span>
+                <span class="retro-tag">Bebida</span>
+              </div>
             </div>
-        </section>
-            
+          </article>
 
-
-        <!-- Location Section - Focus on "Visit Us" -->
-        <section id="location" class="section-padding bg-gray-50" aria-labelledby="location-heading">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                
-                <div class="text-center mb-20 fade-in">
-                    <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4 uppercase tracking-wide">
-                        Ubicación
-                    </span>
-                    <h2 id="location-heading" class="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
-                        Visítanos en <span class="text-gradient">Nogales</span>
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Ubicados en Villa Sonora, Nogales. Ven a vivir la auténtica experiencia de nuestras hamburguesas hechas al modo tradicional en un ambiente acogedor.
-                    </p>
-                </div>
-
-                <!-- Main Content Grid -->
-                <div class="grid lg:grid-cols-3 gap-8 mb-16">
-                    
-                    <!-- Map Card -->
-                    <div class="lg:col-span-2 fade-in">
-                        <div class="bg-white rounded-3xl shadow-lg overflow-hidden h-full">
-                            <!-- Map Container -->
-                            <div class="relative h-96 lg:h-[500px] bg-gray-100 rounded-t-3xl overflow-hidden">
-                                <!-- Google Maps using search query (most reliable method) -->
-                                <iframe 
-                                    src="https://maps.google.com/maps?q=Prolongación+Álvaro+Obregón+4257,+Villa+Sonora,+84093+Heroica+Nogales,+Sonora,+Mexico&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    width="100%" 
-                                    height="100%" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy" 
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    title="Ubicación de Muñoz Burger en Villa Sonora, Nogales"
-                                    aria-label="Mapa de Google mostrando la ubicación de Muñoz Burger">
-                                </iframe>
-                            </div>
-                            
-                            <!-- Map Actions -->
-                            <div class="p-6">
-                                <div class="grid grid-cols-2 gap-4">
-                                    <a href="https://maps.app.goo.gl/tumFtTnoojhrDaqt7" 
-                                    target="_blank"
-                                    class="flex items-center justify-center space-x-3 bg-primary hover:bg-primary-dark text-white py-4 px-6 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 group">
-                                        <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                        </svg>
-                                        <span>Direcciones</span>
-                                    </a>
-                                    
-                                    <button onclick="checkBusinessStatus()"
-                                    class="flex items-center justify-center space-x-3 bg-gray-100 hover:bg-g3ay-100 text-gray-900 py-4 px-6 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 group">
-                                        <svg class="w-5 h-5 text-orange-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                        </svg>
-                                        <span>Ver Horarios</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Info Cards -->
-                    <div class="space-y-6 fade-in">
-                        
-                        <!-- Address Card -->
-                        <div class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path fill-rule="evenodd" d="M12 0a7.875 7.875 0 0 1 6.831 11.795L12.09 24.17 5.164 11.794a7.88 7.88 0 0 1-1.039-3.919A7.875 7.875 0 0 1 12 0zm0 11.794a3.92 3.92 0 1 0 0-7.838 3.92 3.92 0 0 0 0 7.838z"/>
-                                    </svg>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3">Dirección</h3>
-                                    <div class="text-gray-600 leading-relaxed space-y-1">
-                                        <p class="font-medium">Prolongación Álvaro Obregón 4257</p>
-                                        <p>Villa Sonora, 84093</p>
-                                        <p>Heroica Nogales, Sonora</p>
-                                    </div>
-                                    <button onclick="copyAddress()" 
-                                            class="mt-4 inline-flex items-center space-x-2 text-primary hover:text-primary-dark text-sm font-semibold transition-colors group">
-                                        <svg class="w-4 h-4 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-                                        </svg>
-                                        <span>Copiar dirección</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hours Card -->
-                        <div class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                    </svg>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-4">Horarios de Atención</h3>
-                                    <div class="space-y-3">
-                                        <div class="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
-                                            <span class="text-gray-600 font-medium">Lunes - Domingo</span>
-                                            <span class="text-gray-900 font-semibold">01:00 PM - 9:00 PM</span>
-                                        </div>
-                                        <div id="business-status" class="mt-4 flex items-center space-x-3 px-4 py-3 rounded-xl">
-                                            <div id="status-indicator" class="w-3 h-3 rounded-full"></div>
-                                            <span id="status-text" class="font-semibold text-sm"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accessibility & Parking Card -->
-                        <div class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-                                    </svg>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3">Comodidades</h3>
-                                    <div class="space-y-2 text-gray-600">
-                                        <div class="flex items-center space-x-2">
-                                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                            </svg>
-                                            <span>Estacionamiento gratuito</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                            </svg>
-                                            <span>Pagos con tarjeta y transferencias</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                            </svg>
-                                            <span>Área familiar</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                            </svg>
-                                            <span>Terraza</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visit Experience Section -->
-                <div class="fade-in">
-                    <div class="bg-white rounded-3xl shadow-lg p-12">
-                        <div class="text-center mb-12">
-                            <h3 class="text-3xl font-bold text-gray-900 mb-4">
-                                La Experiencia Muñoz Burger
-                            </h3>
-                            <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                               pide en el mostrador, toma asiento y prueba la verdadera smash burger californiana en la frontera.
-                            </p>
-                        </div>
-                        
-                        <div class="grid md:grid-cols-3 gap-8">
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-3ed-100 transition-colors">
-                                    <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12.5 2C13.81 2 15.04 2.53 15.95 3.46L20.54 8.05C21.47 8.96 22 10.19 22 11.5V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V11.5C2 10.19 2.53 8.96 3.46 8.05L8.05 3.46C8.96 2.53 10.19 2 11.5 2H12.5M12 7C10.9 7 10 7.9 10 9S10.9 11 12 11 14 10.1 14 9 13.1 7 12 7Z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Hecho al Momento</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    Como las hacían las hamburgueserías clásicas, con pasión y dedicación.
-                                </p>
-                            </div>
-                            
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gr3en-100 transition-colors">
-                                    <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Ambiente Familiar</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    Un espacio acogedor y cómodo donde las familias pueden disfrutar juntas de una comida auténtica.
-                                </p>
-                            </div>
-                            
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-b3ue-100 transition-colors">
-                                    <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Ubicación Accesible</h4>
-                                <p class="text-gray-600 leading-relaxed">
-                                    En Villa Sonora, Nogales, fácil acceso desde cualquier punto de la ciudad con estacionamiento seguro.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTA Section -->
-                <div class="mt-16 text-center fade-in">
-                    <div class="bg-gradient-to-r from-primary to-orange-600 rounded-3xl p-12 text-white">
-                        <h3 class="text-3xl lg:text-4xl font-bold mb-4">
-                            ¿Listo para visitarnos?
-                        </h3>
-
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://maps.app.goo.gl/tumFtTnoojhrDaqt7" 
-                            target="_blank"
-                            class="inline-flex items-center bg-white text-primary px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shine space-x-3">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                <span>Cómo llegar</span>
-                            </a>
-                            <button onclick="checkBusinessStatus()"
-                            class="inline-flex items-center bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-white/20 space-x-3">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                </svg>
-                                <span>Ver horarios</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          <article class="retro-menu-card">
+            <div class="retro-card-header header-red">
+              <h3 class="retro-card-name">Combo 2</h3>
+              <span class="retro-card-pill">CLÁSICO</span>
             </div>
-        </section>
-
-        <!-- Contact Section - Focus on "Reach Us" -->
-        <section id="contacto" class="section-padding bg-white" aria-labelledby="contacto-heading">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                
-                <div class="text-center mb-20 fade-in">
-                    <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4 uppercase tracking-wide">
-                        Contacto
-                    </span>
-                    <h2 id="contacto-heading" class="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
-                        ¿En que <span class="text-gradient">podemos ayudarte?</span>?
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Comunícate con nosotros para pedidos especiales, eventos, reservaciones o cualquier consulta. Te atendemos de inmediato.
-                    </p>
-                </div>
-                <!-- Services Section -->
-                <div class="fade-in">
-                    <div class="bg-gray-50 rounded-3xl shadow-lg p-12">
-                        
-                        <div class="grid md:grid-cols-3 gap-8">
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-3ed-100 transition-colors">
-                                    <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M2 17h20v2H2zm1.15-4.05L4 11l2 2H3l2-2 2 2H4l.85 1.95L3 13l2-2h3l-1.85 1.95zM12 13c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Pedidos inmediatos</h4>
-                                <p class="text-gray-600 leading-relaxed mb-4">
-                                    Para ordenar comida ahora mismo. Respuesta inmediata y confirmación al instante.
-                                </p>
-                                <a href="tel:+526311093226" 
-                                   class="inline-flex items-center text-primary hover:text-primary-dark font-semibold transition-colors">
-                                    Llamar
-                                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-pur3le-100 transition-colors">
-                                    <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Eventos & Catering</h4>
-                                <p class="text-gray-600 leading-relaxed mb-4">
-                                    Para planificar eventos especiales, celebraciones corporativas y servicios de catering.
-                                </p>
-                                <a href="mailto:info@munozburger.com" 
-                                   class="inline-flex items-center text-primary hover:text-primary-dark font-semibold transition-colors">
-                                    Enviar email
-                                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            
-                            <div class="text-center group">
-                                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gr3en-100 transition-colors">
-                                    <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-3">Consultas generales</h4>
-                                <p class="text-gray-600 leading-relaxed mb-4">
-                                    Para preguntas sobre menú, sugerencias, comentarios o cualquier otra consulta.
-                                </p>
-                                <a href="https://wa.me/message/VE4RQVV7SXPSN1" 
-                                   target="_blank"
-                                   class="inline-flex items-center text-primary hover:text-primary-dark font-semibold transition-colors">
-                                    WhatsApp
-                                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="retro-card-body">
+              <p class="retro-card-desc">
+                Una clásica <strong>smash cheeseburger</strong> californiana con papas
+                a la francesa crujientes y la bebida de tu elección.
+              </p>
+              <div class="retro-card-tags">
+                <span class="retro-tag">Sencilla</span>
+                <span class="retro-tag">Papas</span>
+                <span class="retro-tag">Bebida</span>
+              </div>
             </div>
-        </section>
+          </article>
 
-    </main>
-    <!-- Footer -->
-    <footer class="bg-dark-secondary text-white section-padding" role="contentinfo">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-3 gap-12">
-        
-        <!-- Column 1: Branding -->
-        <div class="fade-in">
-            <a href="#home" class="inline-block mb-6" aria-label="Muñoz Burger - Ir al inicio">
-                <img 
-                    src="/assets/images/logo/munoz-burger-logo-full-300-100.png"
-                    srcset="/assets/images/logo/munoz-burger-logo-full-300-100.png 2x, /assets/images/logo/munoz-burger-logo-full-300-100.png 3x"
-                    alt="Muñoz Burger"
-                    class="w-auto h-auto object-contain hover:scale-105 transition-all durat3on-100"
-                    fetchpriority="high"
-                    loading="eager"
-                >
+        </div><!-- /.retro-menu-grid (combos) -->
+
+
+        <!-- HAMBURGUESAS -->
+        <div class="retro-category-rule" aria-label="Categoría: Hamburguesas">HAMBURGUESAS</div>
+        <div class="retro-menu-grid">
+
+          <article class="retro-menu-card">
+            <div class="retro-card-header">
+              <h3 class="retro-card-name">Muñoz Doble</h3>
+              <span class="retro-card-pill">FAVORITA</span>
+            </div>
+            <div class="retro-card-body">
+              <p class="retro-card-desc">
+                Dos carnes 100&nbsp;% res, dos rebanadas de queso americano real, lechuga deshojada a mano,
+                jitomate, cebolla y nuestro aderezo de la casa en pan de papa Martin's.
+              </p>
+              <div class="retro-card-tags">
+                <span class="retro-tag">2 carnes</span>
+                <span class="retro-tag">Queso americano</span>
+                <span class="retro-tag">Pan Martin's</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="retro-menu-card">
+            <div class="retro-card-header header-red">
+              <h3 class="retro-card-name">Cheeseburger</h3>
+              <span class="retro-card-pill">CLÁSICA</span>
+            </div>
+            <div class="retro-card-body">
+              <p class="retro-card-desc">
+                Una carne 100&nbsp;% res fresca, queso americano real, lechuga deshojada a mano,
+                jitomate, cebolla y aderezo de la casa en pan de papa Martin's.
+              </p>
+              <div class="retro-card-tags">
+                <span class="retro-tag">1 carne</span>
+                <span class="retro-tag">Queso americano</span>
+                <span class="retro-tag">Pan Martin's</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.retro-menu-grid (hamburguesas) -->
+
+
+        <!-- Why Us / Features -->
+        <div class="retro-features-grid" role="list">
+
+          <div class="retro-feature" role="listitem">
+            <div class="retro-feature-icon" aria-hidden="true">🥩</div>
+            <h4>Carne Nunca Congelada</h4>
+            <p>Carne fresca de primera calidad en cada hamburguesa, todos los días.</p>
+          </div>
+
+          <div class="retro-feature" role="listitem">
+            <div class="retro-feature-icon" aria-hidden="true">🥬</div>
+            <h4>Ingredientes Frescos</h4>
+            <p>Productos seleccionados diariamente para garantizar la mejor calidad.</p>
+          </div>
+
+          <div class="retro-feature" role="listitem">
+            <div class="retro-feature-icon" aria-hidden="true">⭐</div>
+            <h4>Estilo Californiano</h4>
+            <p>Preparadas con la técnica de smash burger que llegó de California a la frontera.</p>
+          </div>
+
+          <div class="retro-feature" role="listitem">
+            <div class="retro-feature-icon" aria-hidden="true">🏠</div>
+            <h4>Ambiente Familiar</h4>
+            <p>Terraza y área familiar para disfrutar con toda la familia.</p>
+          </div>
+
+        </div><!-- /.retro-features-grid -->
+
+
+        <!-- Menu CTA Banner -->
+        <div class="retro-cta-banner">
+          <h3>¿LISTO PARA PEDIR?</h3>
+          <p>Contáctanos por WhatsApp — respuesta inmediata</p>
+          <div class="cta-btns">
+            <a
+              href="https://wa.me/message/VE4RQVV7SXPSN1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-retro btn-whatsapp"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+              </svg>
+              ORDENAR POR WHATSAPP
             </a>
+            <a href="tel:+526311093226" class="btn-retro btn-white-outline">
+              📞 &nbsp;(631) 109-3226
+            </a>
+          </div>
+        </div><!-- /.retro-cta-banner -->
+
+      </div><!-- /.retro-container -->
+    </section><!-- /#menu -->
+
+
+    <!-- ── Location Section ── -->
+    <div class="checkered-navy" aria-hidden="true"></div>
+
+    <section id="location" class="retro-section retro-section-cream" aria-labelledby="location-heading">
+      <div class="retro-container">
+
+        <div class="section-header-center">
+          <div class="retro-badge" aria-hidden="true">CÓMO LLEGAR</div>
+          <h2 id="location-heading" class="retro-section-title">VISÍTANOS EN <span class="accent">NOGALES</span></h2>
+          <p class="retro-section-sub">
+            Ubicados en Villa Sonora. Ven a vivir la auténtica experiencia — pide en el mostrador y disfruta.
+          </p>
         </div>
 
-        <!-- Column 2: Navigation -->
-        <div class="fade-in">
-        <h3 class="text-xl font-bold text-white mb-6">Navegación</h3>
-        <nav role="navigation" aria-label="Enlaces del pie de página">
-            <ul class="space-y-3">
-            <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Inicio</a></li>
-            <li><a href="#location" class="text-gray-400 hover:text-primary transition-colors">Nosotros</a></li>
-            <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors">Productos</a></li>
-            <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors">Menú</a></li>
-            <li><a href="#contacto" class="text-gray-400 hover:text-primary transition-colors">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="retro-location-grid">
+
+          <!-- Map card -->
+          <div class="retro-map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=Prolongaci%C3%B3n+%C3%81lvaro+Obreg%C3%B3n+4257,+Villa+Sonora,+84093+Heroica+Nogales,+Sonora,+Mexico&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              title="Ubicación de Muñoz Burger en Villa Sonora, Nogales"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+            <div class="retro-map-actions">
+              <a
+                href="https://maps.app.goo.gl/tumFtTnoojhrDaqt7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-retro btn-red btn-sm"
+              >
+                📍 Cómo llegar
+              </a>
+              <a href="tel:+526311093226" class="btn-retro btn-navy btn-sm">
+                📞 Llamar
+              </a>
+            </div>
+          </div><!-- /.retro-map-wrap -->
+
+          <!-- Info cards stack -->
+          <div class="retro-info-stack">
+
+            <!-- Address -->
+            <div class="retro-info-card">
+              <h3 class="retro-info-card-title">
+                <span aria-hidden="true">📍</span>
+                DIRECCIÓN
+              </h3>
+              <address style="font-style:normal;font-size:.9rem;color:#374151;line-height:1.8;">
+                Prolongación Álvaro Obregón 4257<br>
+                Villa Sonora, 84093<br>
+                Heroica Nogales, Sonora
+              </address>
+              <button
+                onclick="navigator.clipboard?.writeText('Prolongación Álvaro Obregón 4257, Villa Sonora, 84093, Heroica Nogales, Sonora').then(()=>alert('¡Dirección copiada!'))"
+                style="margin-top:.75rem;background:none;border:none;cursor:pointer;font-size:.85rem;font-weight:700;color:#B31942;padding:0;font-family:'Nunito',sans-serif;"
+                aria-label="Copiar dirección al portapapeles"
+              >
+                📋 Copiar dirección
+              </button>
+            </div>
+
+            <!-- Hours -->
+            <div class="retro-info-card">
+              <h3 class="retro-info-card-title">
+                <span aria-hidden="true">🕐</span>
+                HORARIOS
+              </h3>
+              <div class="retro-hours-row">
+                <strong>Lunes – Domingo</strong>
+                <span>1:00 pm – 9:00 pm</span>
+              </div>
+              <div id="business-status"></div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="retro-info-card">
+              <h3 class="retro-info-card-title">
+                <span aria-hidden="true">✨</span>
+                COMODIDADES
+              </h3>
+              <ul class="retro-amenities">
+                <li>Estacionamiento gratuito</li>
+                <li>Área familiar</li>
+                <li>Terraza</li>
+                <li>Pagos con tarjeta y transferencia</li>
+              </ul>
+            </div>
+
+          </div><!-- /.retro-info-stack -->
+
+        </div><!-- /.retro-location-grid -->
+
+      </div><!-- /.retro-container -->
+    </section><!-- /#location -->
+
+
+    <!-- ── Contact Section ── -->
+    <div class="checkered" aria-hidden="true"></div>
+
+    <section id="contacto" class="retro-section retro-section-navy" aria-labelledby="contacto-heading">
+      <div class="retro-container">
+
+        <div class="section-header-center">
+          <div class="retro-badge" aria-hidden="true">CONTÁCTANOS</div>
+          <h2 id="contacto-heading" class="retro-section-title on-dark">¿EN QUÉ PODEMOS <span class="accent">AYUDARTE?</span></h2>
+          <p class="retro-section-sub on-dark">
+            Pedidos, eventos o cualquier consulta — te respondemos de inmediato.
+          </p>
         </div>
 
-        <!-- Column 3: Contact + Socials -->
-        <div class="fade-in">
-        <h3 class="text-xl font-bold text-white mb-6">Contacto</h3>
-        <address class="not-italic space-y-3">
-            <div class="flex items-start space-x-3">
-            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-            </svg>
-            <div class="text-gray-400">
-                <p>Prolongación Álvaro Obregón 4257</p>
-                <p>Villa Sonora, 84093</p>
-                <p>Heroica Nogales, Sonora</p>
+        <div class="retro-contact-grid">
+
+          <!-- WhatsApp -->
+          <div class="retro-contact-card">
+            <div class="retro-contact-icon-wrap" style="background:rgba(37,211,102,.2);" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="#25D366" width="32" height="32" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+              </svg>
             </div>
+            <h4>WHATSAPP</h4>
+            <p>Para pedidos y consultas rápidas. Respuesta inmediata.</p>
+            <a
+              href="https://wa.me/message/VE4RQVV7SXPSN1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-retro btn-whatsapp btn-sm"
+              aria-label="Abrir WhatsApp de Muñoz Burger"
+            >Abrir WhatsApp</a>
+          </div>
+
+          <!-- Phone -->
+          <div class="retro-contact-card">
+            <div class="retro-contact-icon-wrap" style="background:rgba(179,25,66,.25);" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="#B31942" width="32" height="32" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
             </div>
-            <div class="flex items-center space-x-3">
-            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-            </svg>
-            <a href="tel:+526311093226" class="text-gray-400 hover:text-primary transition-colors">+52 631 109 3226</a>
+            <h4>TELÉFONO</h4>
+            <p>Para pedidos por teléfono y consultas al instante.</p>
+            <a
+              href="tel:+526311093226"
+              class="btn-retro btn-red btn-sm"
+              aria-label="Llamar a Muñoz Burger"
+            >(631) 109-3226</a>
+          </div>
+
+          <!-- Email -->
+          <div class="retro-contact-card">
+            <div class="retro-contact-icon-wrap" style="background:rgba(244,196,48,.2);" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="#F4C430" width="32" height="32" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
             </div>
-            <div class="flex items-center space-x-3">
-            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-            <a href="mailto:info@munozburger.com" class="text-gray-400 hover:text-primary transition-colors">info@munozburger.com</a>
-            </div>
+            <h4>CORREO</h4>
+            <p>Para eventos, catering o consultas que requieren más detalle.</p>
+            <a
+              href="mailto:info@munozburger.com"
+              class="btn-retro btn-white-outline btn-sm"
+              aria-label="Enviar correo a Muñoz Burger"
+            >info@munozburger.com</a>
+          </div>
+
+        </div><!-- /.retro-contact-grid -->
+
+      </div><!-- /.retro-container -->
+    </section><!-- /#contacto -->
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <div class="pin-stripe" aria-hidden="true"></div>
+
+  <footer class="retro-footer" role="contentinfo">
+    <div class="retro-footer-grid">
+
+      <!-- Brand -->
+      <div class="retro-footer-col">
+        <a href="#home" aria-label="Muñoz Burger — inicio">
+          <img
+            src="/assets/images/logo/munoz-burger-logo-full-300-100.png"
+            alt="Muñoz Burger"
+            class="retro-footer-logo-img"
+            loading="lazy"
+            width="180"
+          >
+        </a>
+        <p class="retro-footer-desc">
+          Auténticas smash burgers estilo California.<br>
+          Nogales, Sonora — Lun–Dom 1pm–9pm
+        </p>
+
+        <!-- Social icons -->
+        <div class="retro-social-row" aria-label="Redes sociales">
+          <a href="https://facebook.com/munozburger"  target="_blank" rel="noopener noreferrer" class="retro-social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://instagram.com/munozburger" target="_blank" rel="noopener noreferrer" class="retro-social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C8.396 0 7.896.013 6.704.048 5.513.083 4.644.209 3.875.395 3.088.586 2.415.915 1.748 1.582.915 2.415.586 3.088.395 3.875.209 4.644.083 5.513.048 6.704.013 7.896 0 8.396 0 12.017c0 3.621.013 4.121.048 5.313.035 1.191.161 2.06.347 2.829.191.787.52 1.46 1.187 2.127C2.249 23.667 2.922 23.996 3.709 24.187c.769.186 1.638.312 2.829.347 1.192.035 1.692.048 5.313.048 3.621 0 4.121-.013 5.313-.048 1.191-.035 2.06-.161 2.829-.347.787-.191 1.46-.52 2.127-1.187.667-.667.996-1.34 1.187-2.127.186-.769.312-1.638.347-2.829.035-1.192.048-1.692.048-5.313 0-3.621-.013-4.121-.048-5.313-.035-1.191-.161-2.06-.347-2.829-.191-.787-.52-1.46-1.187-2.127C20.583.915 19.91.586 19.123.395c-.769-.186-1.638-.312-2.829-.347C15.102.013 14.602 0 11.981 0h.036zm.183 1.891c3.547 0 3.967.014 5.372.072 1.256.057 1.937.268 2.391.444.601.233.985.511 1.415.94.43.43.708.814.94 1.415.176.454.387 1.135.444 2.391.058 1.405.072 1.825.072 5.372 0 3.547-.014 3.967-.072 5.372-.057 1.256-.268 1.937-.444 2.391-.233.601-.511.985-.94 1.415-.43.43-.814.708-1.415.94-.454.176-1.135.387-2.391.444-1.405.058-1.825.072-5.372.072-3.547 0-3.967-.014-5.372-.072-1.256-.057-1.937-.268-2.391-.444-.601-.233-.985-.511-1.415-.94-.43-.43-.708-.814-.94-1.415-.176-.454-.387-1.135-.444-2.391-.058-1.405-.072-1.825-.072-5.372 0-3.547.014-3.967.072-5.372.057-1.256.268-1.937.444-2.391.233-.601.511-.985.94-1.415.43-.43.814-.708 1.415-.94.454-.176 1.135-.387 2.391-.444 1.405-.058 1.825-.072 5.372-.072zm0 3.21c-3.723 0-6.743 3.02-6.743 6.743s3.02 6.743 6.743 6.743 6.743-3.02 6.743-6.743-3.02-6.743-6.743-6.743zm0 11.127c-2.416 0-4.384-1.968-4.384-4.384s1.968-4.384 4.384-4.384 4.384 1.968 4.384 4.384-1.968 4.384-4.384 4.384zm8.589-11.386c0-.87-.706-1.576-1.576-1.576s-1.576.706-1.576 1.576.706 1.576 1.576 1.576 1.576-.706 1.576-1.576z"/></svg>
+          </a>
+          <a href="https://youtube.com/@munozburger" target="_blank" rel="noopener noreferrer" class="retro-social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@munozburger" target="_blank" rel="noopener noreferrer" class="retro-social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="retro-footer-col">
+        <h3>NAVEGACIÓN</h3>
+        <ul class="retro-footer-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#location">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="retro-footer-col">
+        <h3>CONTACTO</h3>
+        <address class="retro-footer-address">
+          Prolongación Álvaro Obregón 4257<br>
+          Villa Sonora, 84093<br>
+          Heroica Nogales, Sonora<br>
+          <a href="tel:+526311093226">(631) 109-3226</a><br>
+          <a href="mailto:info@munozburger.com">info@munozburger.com</a>
         </address>
+      </div>
 
-        <!-- Social Icons -->
-        <div class="flex space-x-4 mt-6">
-            <!-- Facebook -->
-            <a href="https://facebook.com/munozburger" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook" class="social-icon text-gray-400 hover:text-primary transition-all duration-300">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            </a>
+    </div><!-- /.retro-footer-grid -->
 
-            <!-- Instagram -->
-            <a href="https://instagram.com/munozburger" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram" class="social-icon text-gray-400 hover:text-primary transition-all duration-300">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12.017 0C8.396 0 7.896.013 6.704.048 5.513.083 4.644.209 3.875.395 3.088.586 2.415.915 1.748 1.582.915 2.415.586 3.088.395 3.875.209 4.644.083 5.513.048 6.704.013 7.896 0 8.396 0 12.017c0 3.621.013 4.121.048 5.313.035 1.191.161 2.06.347 2.829.191.787.52 1.46 1.187 2.127C2.249 23.667 2.922 23.996 3.709 24.187c.769.186 1.638.312 2.829.347 1.192.035 1.692.048 5.313.048 3.621 0 4.121-.013 5.313-.048 1.191-.035 2.06-.161 2.829-.347.787-.191 1.46-.52 2.127-1.187.667-.667.996-1.34 1.187-2.127.186-.769.312-1.638.347-2.829.035-1.192.048-1.692.048-5.313 0-3.621-.013-4.121-.048-5.313-.035-1.191-.161-2.06-.347-2.829-.191-.787-.52-1.46-1.187-2.127C20.583.915 19.91.586 19.123.395c-.769-.186-1.638-.312-2.829-.347C15.102.013 14.602 0 11.981 0h.036zm.183 1.891c3.547 0 3.967.014 5.372.072 1.256.057 1.937.268 2.391.444.601.233.985.511 1.415.94.43.43.708.814.94 1.415.176.454.387 1.135.444 2.391.058 1.405.072 1.825.072 5.372 0 3.547-.014 3.967-.072 5.372-.057 1.256-.268 1.937-.444 2.391-.233.601-.511.985-.94 1.415-.43.43-.814.708-1.415.94-.454.176-1.135.387-2.391.444-1.405.058-1.825.072-5.372.072-3.547 0-3.967-.014-5.372-.072-1.256-.057-1.937-.268-2.391-.444-.601-.233-.985-.511-1.415-.94-.43-.43-.708-.814-.94-1.415-.176-.454-.387-1.135-.444-2.391-.058-1.405-.072-1.825-.072-5.372 0-3.547.014-3.967.072-5.372.057-1.256.268-1.937.444-2.391.233-.601.511-.985.94-1.415.43-.43.814-.708 1.415-.94.454-.176 1.135-.387 2.391-.444 1.405-.058 1.825-.072 5.372-.072zm0 3.21c-3.723 0-6.743 3.02-6.743 6.743s3.02 6.743 6.743 6.743 6.743-3.02 6.743-6.743-3.02-6.743-6.743-6.743zm0 11.127c-2.416 0-4.384-1.968-4.384-4.384s1.968-4.384 4.384-4.384 4.384 1.968 4.384 4.384-1.968 4.384-4.384 4.384zm8.589-11.386c0-.87-.706-1.576-1.576-1.576s-1.576.706-1.576 1.576.706 1.576 1.576 1.576 1.576-.706 1.576-1.576z"/>
-            </svg>
-            </a>
-
-            <!-- YouTube -->
-            <a href="https://youtube.com/@munozburger" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en YouTube" class="social-icon text-gray-400 hover:text-primary transition-all duration-300">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-            </a>
-
-            <!-- TikTok -->
-            <a href="https://tiktok.com/@munozburger" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en TikTok" class="social-icon text-gray-400 hover:text-primary transition-all duration-300">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-            </svg>
-            </a>
-        </div>
-        </div> <!-- end of column 3 -->
-    </div> <!-- end of grid -->
-
-    <!-- Footer bottom -->
-    <div class="mt-12 text-center text-gray-500 text-sm border-t border-gray-800 pt-8">
-        <p>&copy; <span id="current-year">2025</span> Muñoz Burger. Todos los derechos reservados.</p>
-        <p class="mt-2">Desarrollado con ❤️ por equipo MUÑOZ</p>
+    <div class="retro-footer-bottom">
+      <p>&copy; <span id="current-year">2025</span> Muñoz Burger. Todos los derechos reservados.<br>
+      Heroica Nogales, Sonora · México</p>
     </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script type="module" src="assets/js/main.min.js" defer></script>
-    <script src="assets/js/sw-registration.js" defer></script>
+  </footer>
 
 
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
 
+  <!-- Mobile menu toggle (inline — no module dependency) -->
+  <script>
+    (function() {
+      var btn  = document.getElementById('mobileToggle');
+      var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
+
+      function openMenu() {
+        menu.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-hidden', 'false');
+        btn.querySelector('svg').innerHTML = '<line x1="3" y1="6" x2="21" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>';
+      }
+
+      function closeMenu() {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+        btn.querySelector('svg').innerHTML = '<line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>';
+      }
+
+      btn.addEventListener('click', function() {
+        menu.classList.contains('open') ? closeMenu() : openMenu();
+      });
+
+      // Expose for inline onclick handlers
+      window.closeMobileMenu = closeMenu;
+
+      // Close on Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('open')) closeMenu();
+      });
+
+      // Footer year
+      var yr = document.getElementById('current-year');
+      if (yr) yr.textContent = new Date().getFullYear();
+
+      // Business status
+      function updateBusinessStatus() {
+        var el = document.getElementById('business-status');
+        if (!el) return;
+        var now  = new Date();
+        var day  = now.getDay();        // 0=Sun 6=Sat
+        var hour = now.getHours() + now.getMinutes() / 60;
+        var open = hour >= 13 && hour < 21; // 1pm–9pm every day
+        el.innerHTML = open
+          ? '<span class="retro-status open"><span style="width:8px;height:8px;border-radius:50%;background:#059669;animation:pulse 1.5s infinite;display:inline-block;"></span> ABIERTO AHORA</span>'
+          : '<span class="retro-status closed"><span style="width:8px;height:8px;border-radius:50%;background:#dc2626;display:inline-block;"></span> CERRADO · Abre a la 1pm</span>';
+      }
+      updateBusinessStatus();
+    })();
+  </script>
+
+  <!-- App modules (deferred) -->
+  <script type="module" src="/assets/js/main.min.js" defer></script>
+  <script src="/assets/js/sw-registration.js" defer></script>
 
 </body>
 </html>

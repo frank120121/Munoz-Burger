@@ -1,86 +1,56 @@
 // tailwind.config.js
 module.exports = {
   content: [
-    "./*.html",
-    "./assets/**/*.js",
-    "./assets/css/input.css"
+    './*.html',
+    './assets/**/*.js',
+    './assets/css/input.css'
   ],
   theme: {
     extend: {
       colors: {
-        // Primary colors to match brand
         primary: {
-          DEFAULT: '#ad2118',
-          dark: '#8a1a13',         // Darker variant for hovers
-          light: '#c52d22'         // Lighter variant if needed
+          DEFAULT: '#B31942',
+          dark:    '#8f1434',
+          light:   '#d12050'
         },
-        // Secondary colors
-        brown: {
-          DEFAULT: '#8B4513',      // brown accent
-          light: '#a0521a',
-          dark: '#6d3610'
+        navy: {
+          DEFAULT: '#0A3161',
+          dark:    '#071f3e',
+          light:   '#0d3f7a'
         },
-        // Background colors
-        'warm-gray': '#f8f8f8',
+        gold:  '#F4C430',
+        cream: '#FFF9F0',
         dark: {
-          DEFAULT: '#0f0f0f',
-          secondary: '#1a1a1a'
-        },
-        accent: '#ffb366'           // orange accent
+          DEFAULT:   '#111827',
+          secondary: '#1F2937'
+        }
       },
       fontFamily: {
-        // Google Fonts
-        display: ['Inter', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
-        nunito: ['Nunito', 'sans-serif'] 
+        display: ['Bebas Neue', 'Impact', 'Arial Narrow', 'sans-serif'],
+        body:    ['Nunito', 'Segoe UI', 'system-ui', 'sans-serif']
       },
       spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
+        '18':  '4.5rem',
+        '88':  '22rem',
         '128': '32rem'
       },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem'
       },
-      borderWidth: {
-        '3': '3px',           
-        '5': '5px',
-        '6': '6px'
-      },
-      backdropBlur: {
-        xs: '2px'
-      },
-      // animation configurations
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'shine': 'shine 0.5s ease-in-out',
-        'fade-in': 'fadeIn 0.7s ease-out forwards'
+        'fade-in': 'fadeIn 0.6s ease-out forwards'
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' }
-        },
-        shine: {
-          '0%': { left: '-100%' },
-          '100%': { left: '100%' }
-        },
         fadeIn: {
-          '0%': { 
-            opacity: '0',
-            transform: 'translateY(30px)'
-          },
-          '100%': { 
-            opacity: '1',
-            transform: 'translateY(0)'
-          }
+          '0%':   { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
         }
       },
-      // z-index utilities
       zIndex: {
         '60': '60',
-        '70': '70'
+        '70': '70',
+        '100': '100'
       }
     }
   },
