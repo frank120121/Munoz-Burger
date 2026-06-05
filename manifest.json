@@ -1,6 +1,6 @@
 {
   "name": "Muñoz Burger",
-  "short_name": "Muñoz Burger",
+  "short_name": "Muñoz",
   "id": "/?app=munoz_burger",
   "description": "Hamburguesas a la antigua en Nogales, Sonora. Carne molida fresca, nunca congelada. Lun–Dom 1pm–9pm.",
   "lang": "es-MX",
@@ -31,18 +31,15 @@
   "shortcuts": [
     {
       "name": "Menú",
-      "url": "/#menu",
-      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+      "url": "/#menu"
     },
     {
       "name": "Ubicación",
-      "url": "/#location",
-      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+      "url": "/#location"
     },
     {
       "name": "Contacto",
-      "url": "/#contacto",
-      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+      "url": "/#contacto"
     }
   ],
 

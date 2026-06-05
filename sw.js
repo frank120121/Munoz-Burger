@@ -11,11 +11,9 @@ const PRECACHE_ASSETS = [
   '/manifest.json',
   '/assets/css/retro.css',
   '/assets/js/sw-registration.js',
-  '/assets/images/favicon/favicon.ico',
-  '/assets/images/favicon/favicon-512-512.png',
   '/assets/images/logo/android-chrome-192x192.png',
   '/assets/images/logo/android-chrome-512x512.png',
-  '/assets/images/logo/favicon-512-512.png'
+
 ];
 
 self.addEventListener('install', event => {
