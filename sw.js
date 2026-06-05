@@ -1,6 +1,6 @@
 // sw.js — Muñoz Burger service worker
 
-const CACHE_VERSION = 'munoz-burger-v2.1.2';
+const CACHE_VERSION = 'munoz-burger-v2.1.6';
 const CACHE_NAME = `cache-${CACHE_VERSION}`;
 const OFFLINE_PAGE = '/offline.html';
 
