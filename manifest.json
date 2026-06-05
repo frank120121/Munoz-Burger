@@ -1,106 +1,50 @@
 {
-  "name": "Muñoz Burger - Burgers and Fries en Nogales, Sonora",
+  "name": "Muñoz Burger",
   "short_name": "Muñoz Burger",
   "id": "/?app=munoz_burger",
-  "description": "Auténticas smash burgers estilo California en Nogales, Sonora. Order, earn points, discounts, free products and enjoy the authentic flavor.",
+  "description": "Hamburguesas a la antigua en Nogales, Sonora. Carne molida fresca, nunca congelada. Lun–Dom 1pm–9pm.",
   "lang": "es-MX",
-  "start_url": "/?utm_source=web_app_manifest",
+  "start_url": "/?utm_source=pwa",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui", "browser"],
   "orientation": "portrait",
   "theme_color": "#B31942",
-  "background_color": "#FFFFFF",
+  "background_color": "#0A3161",
   "dir": "ltr",
-  "categories": ["food", "shopping", "business"],
+  "categories": ["food", "business"],
 
   "icons": [
-      {
-        "src": "/assets/images/favicon/favicon-16x16.png",
-        "sizes": "16x16",
-        "type": "image/png"
-      },
-      {
-        "src": "/assets/images/favicon/favicon-32x32.png",
-        "sizes": "32x32",
-        "type": "image/png"
-      },
-      {
-        "src": "/assets/images/logo/munoz-icon-192-192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/assets/images/logo/munoz-icon-192-192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/assets/images/logo/favicon-512-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/assets/images/logo/favicon-512-512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ],
-
-  "screenshots": [
-      {
-        "src": "/assets/images/screenshots/menu-view.png",
-        "sizes": "1080x1920",
-        "type": "image/png",
-        "form_factor": "narrow"
-      },
-      {
-        "src": "/assets/images/screenshots/loyalty-view.png",
-        "sizes": "1080x1920",
-        "type": "image/png",
-        "form_factor": "narrow"
-      }
-    ],
+    {
+      "src": "/assets/images/logo/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/logo/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
 
   "shortcuts": [
-      {
-        "name": "Menú de Muñoz Burger",
-        "short_name": "Menú",
-        "description": "Ver todas las opciones de hamburguesas, papas y bebidas en Muñoz Burger",
-        "url": "/#menu",
-        "icons": [{ 
-          "src": "/assets/images/favicon/favicon-96x96.png", 
-          "sizes": "96x96",
-          "type": "image/png"
-        }]
-      },
-      {
-        "name": "Ubicación del restaurante",
-        "short_name": "Ubicación",
-        "description": "Encuéntranos en Villa Sonora, Nogales",
-        "url": "/#location",
-        "icons": [{ 
-          "src": "/assets/images/favicon/favicon-96x96.png", 
-          "sizes": "96x96",
-          "type": "image/png"
-        }]
-      },
-      {
-        "name": "Métodos de contacto",
-        "short_name": "Contacto",
-        "description": "Contacta a Muñoz Burger por WhatsApp, teléfono o email",
-        "url": "/#contacto",
-        "icons": [{ 
-          "src": "/assets/images/favicon/favicon-96x96.png", 
-          "sizes": "96x96",
-          "type": "image/png"
-        }]
-      }
-    ],
+    {
+      "name": "Menú",
+      "url": "/#menu",
+      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Ubicación",
+      "url": "/#location",
+      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Contacto",
+      "url": "/#contacto",
+      "icons": [{ "src": "/assets/images/favicon/favicon-512-512.png", "sizes": "512x512" }]
+    }
+  ],
 
   "related_applications": [],
   "prefer_related_applications": false
