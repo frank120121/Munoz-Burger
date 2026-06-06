@@ -2,21 +2,25 @@
    MUÑOZ BURGER
    Red #B31942 · Navy #0A3161 · White #FFFFFF
    Red = one signal color. Used only where it earns it.
+   Gold = decorative only. Never interactive.
    ============================================================ */
 
 :root {
-  --red:   #B31942;
-  --navy:  #0A3161;
-  --white: #FFFFFF;
-  --cream: #F8F6F3;
-  --dark:  #0D1117;
-  --gray:  #6B7280;
-  --border: rgba(10,49,97,0.12);
+  --red:    #B31942;
+  --navy:   #0A3161;
+  --white:  #FFFFFF;
+  --cream:  #F5F0E8;
+  --dark:   #06101E;
+  --gray:   #6B7280;
+  --gold:   #C8960C;
+  --border: rgba(10,49,97,0.14);
 
-  --font-display: 'Bebas Neue', 'Impact', 'Arial Narrow', sans-serif;
+  --font-display: 'Alfa Slab One', 'Bebas Neue', serif;
+  --font-heading: 'Bebas Neue', 'Impact', 'Arial Narrow', sans-serif;
+  --font-serif:   'Playfair Display', Georgia, serif;
   --font-body:    'Nunito', 'Segoe UI', system-ui, sans-serif;
 
-  --shadow: 4px 4px 0 var(--navy);
+  --shadow:    4px 4px 0 var(--navy);
   --shadow-lg: 6px 6px 0 var(--navy);
   --radius: 4px;
 }
@@ -91,7 +95,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-logo-text {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   color: var(--white);
   letter-spacing: 0.08em;
@@ -115,7 +119,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-nav-link {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1rem;
   letter-spacing: 0.14em;
   color: rgba(255,255,255,0.6);
@@ -149,7 +153,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .retro-mobile-menu.open { display: flex; }
 .retro-mobile-menu a {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.75rem;
   letter-spacing: 0.1em;
   color: rgba(255,255,255,0.7);
@@ -186,7 +190,7 @@ img { max-width: 100%; height: auto; display: block; }
   justify-content: center;
   overflow: hidden;
   padding-top: 67px;
-  background: var(--navy);
+  background: #0A0A0A;
 }
 
 .retro-hero-video {
@@ -204,9 +208,10 @@ img { max-width: 100%; height: auto; display: block; }
   z-index: 1;
   background: linear-gradient(
     170deg,
-    rgba(10,49,97,0.92) 0%,
-    rgba(10,49,97,0.72) 50%,
-    rgba(10,49,97,0.95) 100%
+    rgba(0,0,0,0.82) 0%,
+    rgba(10,10,20,0.5) 40%,
+    rgba(179,25,66,0.12) 65%,
+    rgba(0,0,0,0.9) 100%
   );
 }
 
@@ -221,12 +226,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .retro-hero-eyebrow {
   display: inline-block;
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
   letter-spacing: 0.45em;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.6);
   margin-bottom: 1.75rem;
   text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 0.45em 1.6em;
+  border-radius: 2px;
 }
 
 .retro-hero-logo {
@@ -237,21 +245,21 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-hero-tagline {
-  font-family: var(--font-display);
-  font-size: clamp(0.85rem, 2vw, 1.15rem);
-  color: rgba(255,255,255,0.4);
-  letter-spacing: 0.45em;
-  margin: 0 0 0.6rem;
-  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.04em;
+  margin: 0 0 2rem;
 }
 
 .retro-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(4.5rem, 14vw, 10rem);
+  font-size: clamp(4rem, 13vw, 9.5rem);
   color: var(--white);
-  letter-spacing: 0.02em;
-  line-height: 0.85;
-  margin: 0 0 2.75rem;
+  letter-spacing: 0.01em;
+  line-height: 0.88;
+  margin: 0 0 1.5rem;
 }
 
 .retro-hero-cta {
@@ -293,7 +301,7 @@ img { max-width: 100%; height: auto; display: block; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   letter-spacing: 0.12em;
   font-size: 1.2rem;
   padding: 14px 32px;
@@ -327,13 +335,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .btn-secondary:hover { box-shadow: var(--shadow-lg); color: var(--white); }
 
-/* Ghost — white outline on dark backgrounds. */
+/* Ghost — navy outline on light backgrounds. */
 .btn-ghost {
   background: transparent;
-  color: rgba(255,255,255,0.75);
-  border-color: rgba(255,255,255,0.3);
+  color: var(--navy);
+  border-color: rgba(10,49,97,0.35);
 }
-.btn-ghost:hover { color: var(--white); border-color: rgba(255,255,255,0.6); }
+.btn-ghost:hover { color: var(--navy); border-color: var(--navy); }
 
 .btn-sm {
   font-size: 0.95rem;
@@ -346,12 +354,13 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================ */
 
 .quick-bar {
-  background: var(--navy);
+  background: var(--white);
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-top: 3px solid var(--red);
+  border-bottom: 1px solid rgba(10,49,97,0.1);
 }
 
 .quick-bar-item {
@@ -365,13 +374,13 @@ img { max-width: 100%; height: auto; display: block; }
   justify-content: center;
 }
 .quick-bar-item + .quick-bar-item {
-  border-left: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(10,49,97,0.1);
 }
 .quick-bar-item a {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: var(--white);
+  color: var(--dark);
   width: 100%;
   justify-content: center;
 }
@@ -380,23 +389,24 @@ img { max-width: 100%; height: auto; display: block; }
 
 .quick-bar-text strong {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.65rem;
   letter-spacing: 0.35em;
-  color: rgba(255,255,255,0.4);
+  color: var(--red);
+  opacity: 0.65;
   line-height: 1;
   margin-bottom: 4px;
 }
 .quick-bar-text span {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--dark);
   line-height: 1.2;
 }
 
 @media (max-width: 600px) {
   .quick-bar { flex-direction: column; }
-  .quick-bar-item + .quick-bar-item { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); }
+  .quick-bar-item + .quick-bar-item { border-left: none; border-top: 1px solid rgba(10,49,97,0.08); }
   .quick-bar-item { justify-content: flex-start; max-width: 100%; padding: 1rem 1.5rem; }
   .quick-bar-item a { justify-content: flex-start; }
 }
@@ -406,9 +416,17 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================ */
 
 .retro-section { padding: 5rem 1.5rem; }
-.retro-section-white { background: var(--white); }
-.retro-section-cream { background: var(--cream); }
-.retro-section-navy  { background: var(--navy); }
+.retro-section-white { background: #FDFAF4; }
+.retro-section-cream {
+  background-color: var(--cream);
+  background-image: radial-gradient(circle, rgba(10,49,97,0.065) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.retro-section-navy  {
+  background-color: var(--cream);
+  background-image: radial-gradient(circle, rgba(10,49,97,0.065) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
 
 .retro-container { max-width: 1100px; margin: 0 auto; }
 
@@ -417,31 +435,40 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 3.5rem;
 }
 
-/* Section label — small, uppercase, navy. Not red. */
+/* Section label — small, uppercase, navy. */
 .retro-label {
   display: inline-block;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.68rem;
   letter-spacing: 0.45em;
-  color: var(--navy);
-  opacity: 0.45;
+  color: var(--red);
+  opacity: 0.65;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
-.retro-label.on-dark { color: var(--white); opacity: 0.35; }
+.retro-label.on-dark { color: var(--red); opacity: 0.65; }
 
 .retro-section-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(2.75rem, 7vw, 5.25rem);
+  letter-spacing: 0.02em;
   line-height: 0.95;
   color: var(--navy);
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
 }
-.retro-section-title.on-dark { color: var(--white); }
+.retro-section-title.on-dark { color: var(--navy); }
 
-/* Red accent on one word of the title — used once per section max */
-.retro-section-title .accent { color: var(--red); }
+.retro-section-title .accent { color: inherit; }
+
+/* Short red rule beneath section title — frames the heading */
+.retro-section-title::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  background: var(--red);
+  margin: 0.75rem auto 0;
+}
 
 .retro-section-sub {
   font-size: 0.95rem;
@@ -450,27 +477,32 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 auto;
   line-height: 1.7;
 }
-.retro-section-sub.on-dark { color: rgba(255,255,255,0.45); }
+.retro-section-sub.on-dark { color: var(--gray); }
 
-/* Category rule — quiet, structural */
+/* Category rule — gradient fade lines flanking the label */
 .retro-category-rule {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.65rem;
   letter-spacing: 0.45em;
   color: var(--navy);
-  opacity: 0.4;
+  opacity: 0.5;
   margin: 3rem 0 1.25rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   text-transform: uppercase;
 }
-.retro-category-rule::before,
+.retro-category-rule::before {
+  content: '';
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(to right, transparent, rgba(10,49,97,0.22));
+}
 .retro-category-rule::after {
   content: '';
   flex: 1;
-  height: 1px;
-  background: var(--border);
+  height: 1.5px;
+  background: linear-gradient(to left, transparent, rgba(10,49,97,0.22));
 }
 
 /* ============================================================
@@ -509,7 +541,7 @@ img { max-width: 100%; height: auto; display: block; }
 .retro-card-header.header-red { background: var(--red); }
 
 .retro-card-name {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   letter-spacing: 0.06em;
   color: var(--white);
@@ -518,13 +550,17 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-card-pill {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.58rem;
   letter-spacing: 0.18em;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
   white-space: nowrap;
   flex-shrink: 0;
   text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  padding: 2px 10px;
+  border-radius: 2px;
 }
 
 .retro-card-body {
@@ -535,9 +571,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-card-desc {
-  font-size: 0.875rem;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
   color: var(--gray);
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -617,11 +654,17 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-feature h4 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.1rem;
   letter-spacing: 0.08em;
   color: var(--navy);
   margin: 0 0 0.4rem;
+}
+.retro-feature h4::before {
+  content: '◆  ';
+  color: var(--red);
+  font-size: 0.65em;
+  opacity: 0.8;
 }
 .retro-feature p {
   font-size: 0.82rem;
@@ -641,24 +684,38 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================ */
 
 .retro-cta-banner {
-  background: var(--navy);
+  background: var(--red);
   border-radius: var(--radius);
+  border: 1.5px solid var(--red);
+  box-shadow: var(--shadow-lg);
   padding: 3.5rem 2rem;
   text-align: center;
   margin-top: 4rem;
 }
 .retro-cta-banner h3 {
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 4.25rem);
   color: var(--white);
   letter-spacing: 0.04em;
   margin: 0 0 0.5rem;
   line-height: 1;
 }
 .retro-cta-banner p {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.65);
   font-size: 0.9rem;
   margin: 0 0 2rem;
+}
+/* Button inside red banner: white fill so it reads against red */
+.retro-cta-banner .btn-primary {
+  background: var(--white);
+  color: var(--red);
+  border-color: var(--white);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+}
+.retro-cta-banner .btn-primary:hover {
+  background: var(--white);
+  color: var(--red);
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
 }
 .retro-cta-banner .cta-btns {
   display: flex;
@@ -713,7 +770,7 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: var(--shadow);
 }
 .retro-info-card-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.65rem;
   letter-spacing: 0.4em;
   color: var(--navy);
@@ -734,19 +791,6 @@ img { max-width: 100%; height: auto; display: block; }
 .retro-hours-row strong { color: var(--dark); font-weight: 700; }
 .retro-hours-row span   { color: var(--gray); font-size: 0.8rem; }
 
-.retro-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 12px;
-  border-radius: 2px;
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  margin-top: 1rem;
-}
-.retro-status.open   { background: rgba(5,150,105,0.08); color: #065F46; border: 1px solid rgba(5,150,105,0.25); }
-.retro-status.closed { background: rgba(179,25,66,0.08); color: var(--red); border: 1px solid rgba(179,25,66,0.25); }
 
 .retro-amenities {
   list-style: none;
@@ -784,43 +828,46 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .retro-contact-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--white);
+  border: 1.5px solid var(--navy);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
   padding: 2.5rem 1.75rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: background 0.2s, border-color 0.2s;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .retro-contact-card:hover {
-  background: rgba(255,255,255,0.07);
-  border-color: rgba(255,255,255,0.2);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-lg);
 }
 
 .retro-contact-icon-wrap {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.07);
+  background: rgba(10,49,97,0.06);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
+  color: var(--navy);
 }
 
 .retro-contact-card h4 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.7rem;
   letter-spacing: 0.4em;
-  color: rgba(255,255,255,0.4);
+  color: var(--navy);
+  opacity: 0.45;
   margin: 0 0 0.375rem;
   text-transform: uppercase;
 }
 .retro-contact-card p {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--gray);
   line-height: 1.6;
   margin: 0 0 1.5rem;
   flex: 1;
@@ -831,8 +878,9 @@ img { max-width: 100%; height: auto; display: block; }
    ============================================================ */
 
 .retro-footer {
-  background: var(--dark);
-  color: var(--white);
+  background: var(--white);
+  border-top: 3px solid var(--red);
+  color: var(--dark);
   padding: 4rem 1.5rem 0;
 }
 
@@ -847,21 +895,22 @@ img { max-width: 100%; height: auto; display: block; }
 .retro-footer-logo-img {
   max-width: 150px;
   margin-bottom: 1rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .retro-footer-desc {
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.35);
+  color: var(--gray);
   line-height: 1.8;
   margin: 0 0 1.25rem;
 }
 
 .retro-footer-col h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.65rem;
   letter-spacing: 0.4em;
-  color: rgba(255,255,255,0.25);
+  color: var(--navy);
+  opacity: 0.4;
   margin: 0 0 1rem;
   text-transform: uppercase;
 }
@@ -875,32 +924,32 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 0.6rem;
 }
 .retro-footer-links a {
-  color: rgba(255,255,255,0.45);
+  color: var(--gray);
   font-size: 0.875rem;
   transition: color 0.2s;
 }
-.retro-footer-links a:hover { color: var(--white); }
+.retro-footer-links a:hover { color: var(--navy); }
 
 .retro-footer-address {
   font-style: normal;
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.35);
+  color: var(--gray);
   line-height: 1.9;
 }
-.retro-footer-address a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
-.retro-footer-address a:hover { color: var(--white); }
+.retro-footer-address a { color: var(--gray); transition: color 0.2s; }
+.retro-footer-address a:hover { color: var(--navy); }
 
 .retro-social-row { display: flex; gap: 8px; margin-top: 1rem; }
 .retro-social-btn {
   width: 36px;
   height: 36px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(10,49,97,0.05);
+  border: 1px solid rgba(10,49,97,0.15);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.35);
+  color: rgba(10,49,97,0.4);
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .retro-social-btn:hover { background: var(--red); border-color: var(--red); color: var(--white); }
@@ -910,10 +959,10 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 0;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(10,49,97,0.08);
   text-align: center;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.2);
+  color: rgba(10,49,97,0.3);
   line-height: 1.8;
 }
 
@@ -940,7 +989,6 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 0.75rem;
 }
 
-#business-status { display: inline-flex; align-items: center; }
 
 :focus-visible {
   outline: 2px solid var(--red);

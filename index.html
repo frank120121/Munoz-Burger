@@ -35,11 +35,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400;1,600&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'"
   >
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400;1,600&display=swap" rel="stylesheet">
   </noscript>
 
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -52,18 +52,19 @@
     body{margin:0;font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:#fff;overflow-x:hidden}
     .retro-header{position:fixed;top:0;left:0;right:0;z-index:100;background:#0A3161;border-bottom:3px solid #B31942}
     .retro-header-bar{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 1.5rem;height:64px;gap:1rem}
-    .retro-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:67px;background:#0A3161}
+    .retro-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:67px;background:#0a0a0a}
     .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(170deg,rgba(10,49,97,.88) 0%,rgba(10,49,97,.65) 50%,rgba(10,49,97,.92) 100%)}
     .retro-hero-content{position:relative;z-index:2;text-align:center;padding:3rem 1.5rem 4rem;max-width:760px;width:100%}
-    .retro-hero-title{font-family:'Bebas Neue','Impact','Arial Narrow',sans-serif;font-size:clamp(4rem,13vw,9rem);color:#fff;letter-spacing:.02em;line-height:.85;margin:0 0 2.5rem}
+    .retro-hero-title{font-family:'Alfa Slab One','Bebas Neue',serif;font-size:clamp(4rem,13vw,9.5rem);color:#fff;letter-spacing:.01em;line-height:.88;margin:0 0 1.5rem}
+    .retro-hero-tagline{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.25rem);color:rgba(255,255,255,.5);letter-spacing:.04em;margin:0 0 2rem}
     .retro-hero-logo{max-width:240px;width:100%;margin:0 auto 1.5rem;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5))}
     .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.2rem;padding:14px 34px;border-radius:6px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:52px;border:2px solid transparent;line-height:1}
     .btn-primary{background:#B31942;color:#fff;border-color:#B31942;box-shadow:4px 4px 0 rgba(0,0,0,.2)}
     .retro-hero-tagline{font-family:'Bebas Neue','Impact',sans-serif;font-size:clamp(.9rem,2.5vw,1.3rem);color:rgba(255,255,255,.55);letter-spacing:.4em;margin:0 0 .5rem}
   </style>
 
-  <link rel="preload" href="/assets/css/retro.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/assets/css/retro.css"></noscript>
+  <link rel="preload" href="/assets/css/retro.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/retro.css?v=2"></noscript>
 
   <script type="application/ld+json">
   {
@@ -177,10 +178,12 @@
     <div class="retro-hero-content">
 
       <div class="retro-hero-eyebrow" aria-hidden="true">
-        ★ &nbsp; HEROICA NOGALES, SONORA &nbsp; ★
+        ◆ &nbsp; HEROICA NOGALES, SONORA &nbsp; ◆
       </div>
 
       <h1 class="retro-hero-title">BURGERS<br>&amp; FRIES</h1>
+
+      <p class="retro-hero-tagline">Hecho al momento · Carne sin congelar · Nogales, Sonora</p>
 
       <div class="retro-hero-cta">
         <a
@@ -404,8 +407,8 @@
 
         <div class="retro-location-grid">
 
-          <div class="retro--wrap">
-            <iframemap
+          <div class="retro-map-wrap">
+            <iframe
               src="https://maps.google.com/maps?q=Prolongaci%C3%B3n+%C3%81lvaro+Obreg%C3%B3n+4257,+Villa+Sonora,+84093+Heroica+Nogales,+Sonora,+Mexico&t=&z=15&ie=UTF8&iwloc=&output=embed"
               title="Ubicación de Muñoz Burger en Villa Sonora, Heroica Nogales"
               loading="lazy"
@@ -448,7 +451,6 @@
                 <strong>Lunes – Domingo</strong>
                 <span>1:00 pm – 9:00 pm</span>
               </div>
-              <div id="business-status"></div>
             </div>
 
             <div class="retro-info-card">
@@ -605,17 +607,6 @@
 
       var yr = document.getElementById('current-year');
       if (yr) yr.textContent = new Date().getFullYear();
-
-      function updateBusinessStatus() {
-        var el = document.getElementById('business-status');
-        if (!el) return;
-        var now = new Date(), hour = now.getHours() + now.getMinutes() / 60;
-        var open = hour >= 13 && hour < 21;
-        el.innerHTML = open
-          ? '<span class="retro-status open"><span style="width:8px;height:8px;border-radius:50%;background:#059669;display:inline-block;margin-right:2px;"></span> ABIERTO AHORA</span>'
-          : '<span class="retro-status closed"><span style="width:8px;height:8px;border-radius:50%;background:#dc2626;display:inline-block;margin-right:2px;"></span> CERRADO · Abre a la 1pm</span>';
-      }
-      updateBusinessStatus();
     })();
   </script>
 
