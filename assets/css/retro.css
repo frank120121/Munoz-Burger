@@ -229,10 +229,10 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--font-heading);
   font-size: 0.68rem;
   letter-spacing: 0.45em;
-  color: rgba(255,255,255,0.6);
+  color: var(--white);
   margin-bottom: 1.75rem;
   text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.22);
+  border: 1px solid rgba(255,255,255,0.4);
   padding: 0.45em 1.6em;
   border-radius: 2px;
 }
@@ -248,7 +248,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(1rem, 2.2vw, 1.25rem);
-  color: rgba(255,255,255,0.5);
+  color: var(--white);
   letter-spacing: 0.04em;
   margin: 0 0 2rem;
 }
@@ -285,11 +285,11 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 0.5rem 1.5rem;
   font-size: 0.82rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.4);
+  color: var(--white);
 }
-.retro-hero-info a { color: rgba(255,255,255,0.55); }
-.retro-hero-info a:hover { color: var(--white); }
-.retro-hero-info .sep { color: rgba(255,255,255,0.15); }
+.retro-hero-info a { color: var(--white); }
+.retro-hero-info a:hover { color: rgba(255,255,255,0.8); }
+.retro-hero-info .sep { color: rgba(255,255,255,0.4); }
 
 /* ============================================================
    BUTTONS
@@ -449,26 +449,15 @@ img { max-width: 100%; height: auto; display: block; }
 .retro-label.on-dark { color: var(--red); opacity: 0.65; }
 
 .retro-section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.75rem, 7vw, 5.25rem);
-  letter-spacing: 0.02em;
-  line-height: 0.95;
-  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: var(--red);
   margin: 0 0 0.75rem;
 }
-.retro-section-title.on-dark { color: var(--navy); }
-
+.retro-section-title.on-dark { color: var(--red); }
 .retro-section-title .accent { color: inherit; }
-
-/* Short red rule beneath section title — frames the heading */
-.retro-section-title::after {
-  content: '';
-  display: block;
-  width: 44px;
-  height: 3px;
-  background: var(--red);
-  margin: 0.75rem auto 0;
-}
 
 .retro-section-sub {
   font-size: 0.95rem;
@@ -479,30 +468,31 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .retro-section-sub.on-dark { color: var(--gray); }
 
-/* Category rule — gradient fade lines flanking the label */
+/* Category rule */
 .retro-category-rule {
   font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.45em;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
   color: var(--navy);
-  opacity: 0.5;
-  margin: 3rem 0 1.25rem;
+  margin: 2.5rem 0 1.25rem;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   text-transform: uppercase;
 }
 .retro-category-rule::before {
   content: '';
   flex: 1;
   height: 1.5px;
-  background: linear-gradient(to right, transparent, rgba(10,49,97,0.22));
+  background: var(--navy);
+  opacity: 0.2;
 }
 .retro-category-rule::after {
   content: '';
   flex: 1;
   height: 1.5px;
-  background: linear-gradient(to left, transparent, rgba(10,49,97,0.22));
+  background: var(--navy);
+  opacity: 0.2;
 }
 
 /* ============================================================
@@ -549,19 +539,7 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 1;
 }
 
-.retro-card-pill {
-  font-family: var(--font-heading);
-  font-size: 0.58rem;
-  letter-spacing: 0.18em;
-  color: rgba(255,255,255,0.8);
-  white-space: nowrap;
-  flex-shrink: 0;
-  text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.1);
-  padding: 2px 10px;
-  border-radius: 2px;
-}
+.retro-card-pill { display: none; }
 
 .retro-card-body {
   padding: 1.25rem;
@@ -659,12 +637,6 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.08em;
   color: var(--navy);
   margin: 0 0 0.4rem;
-}
-.retro-feature h4::before {
-  content: '◆  ';
-  color: var(--red);
-  font-size: 0.65em;
-  opacity: 0.8;
 }
 .retro-feature p {
   font-size: 0.82rem;

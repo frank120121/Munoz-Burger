@@ -6,7 +6,8 @@
   <meta name="description" content="Muñoz Burger — Hamburguesas hechas al momento de manera tradicional en Nogales, Sonora. Carne molida fresca, nunca congelada. Ingredientes simples, frescos, de calidad. Horario de Lun–Dom 1pm–9pm.">
   <meta name="keywords" content="burgers, hamburguesas, nogales, sonora, muñoz burger, papas fritas, carne fresca">
   <meta name="author"  content="Muñoz Burger">
-  <meta name="robots"  content="index, follow">
+  <meta name="robots"  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://munozburger.com">
 
   <title>Muñoz Burger | Burgers &amp; Fries · Heroica Nogales, Sonora</title>
 
@@ -56,7 +57,7 @@
     .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(170deg,rgba(10,49,97,.88) 0%,rgba(10,49,97,.65) 50%,rgba(10,49,97,.92) 100%)}
     .retro-hero-content{position:relative;z-index:2;text-align:center;padding:3rem 1.5rem 4rem;max-width:760px;width:100%}
     .retro-hero-title{font-family:'Alfa Slab One','Bebas Neue',serif;font-size:clamp(4rem,13vw,9.5rem);color:#fff;letter-spacing:.01em;line-height:.88;margin:0 0 1.5rem}
-    .retro-hero-tagline{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.25rem);color:rgba(255,255,255,.5);letter-spacing:.04em;margin:0 0 2rem}
+    .retro-hero-tagline{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.25rem);color:#fff;letter-spacing:.04em;margin:0 0 2rem}
     .retro-hero-logo{max-width:240px;width:100%;margin:0 auto 1.5rem;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5))}
     .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.2rem;padding:14px 34px;border-radius:6px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:52px;border:2px solid transparent;line-height:1}
     .btn-primary{background:#B31942;color:#fff;border-color:#B31942;box-shadow:4px 4px 0 rgba(0,0,0,.2)}
@@ -71,7 +72,7 @@
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Muñoz Burger",
-    "description": "Hamburguesas hechas al momento de manera tradicional en Heroica Nogales, Sonora. Carne molida fresca, nunca congelada.",
+    "description": "Hamburguesas smash estilo California hechas al momento en Heroica Nogales, Sonora. Carne molida fresca 100% de res, nunca congelada. Ingredientes simples y de calidad.",
     "url": "https://munozburger.com",
     "telephone": "+526311093226",
     "email": "info@munozburger.com",
@@ -83,11 +84,37 @@
       "postalCode": "84093",
       "addressCountry": "MX"
     },
-    "servesCuisine": "American",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "31.3167",
+      "longitude": "-110.9333"
+    },
+    "servesCuisine": ["American", "Burgers"],
     "priceRange": "$$",
+    "currenciesAccepted": "MXN",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
     "openingHours": ["Mo-Su 13:00-21:00"],
-    "image": "https://munozburger.com/assets/images/logo/logo-og-1200-630.png",
-    "menu": "https://munozburger.com/#menu"
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "13:00",
+      "closes": "21:00"
+    },
+    "hasMenu": "https://munozburger.com/#menu",
+    "image": [
+      "https://munozburger.com/assets/images/logo/logo-og-1200-630.png"
+    ],
+    "sameAs": [
+      "https://facebook.com/munozburger",
+      "https://instagram.com/munozburger",
+      "https://youtube.com/@munozburger",
+      "https://tiktok.com/@munozburger"
+    ],
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Estacionamiento gratuito", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Terraza", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Área familiar", "value": true}
+    ]
   }
   </script>
 </head>
@@ -168,6 +195,8 @@
     <video
       class="retro-hero-video"
       autoplay muted loop playsinline
+      preload="none"
+      poster="/assets/images/logo/logo-og-1200-630.png"
       aria-hidden="true"
     >
       <source src="/assets/videos/hero-desktop.webm" type="video/webm">
@@ -262,9 +291,8 @@
         <div class="retro-menu-grid">
 
           <article class="retro-menu-card">
-            <div class="retro-card-header">
+            <div class="retro-card-header header-red">
               <h3 class="retro-card-name">Combo 1</h3>
-              <span class="retro-card-pill">ESTRELLA</span>
             </div>
             <div class="retro-card-body">
               <p class="retro-card-desc">Muñoz Doble + Papas + Bebida</p>
@@ -276,9 +304,8 @@
           </article>
 
           <article class="retro-menu-card">
-            <div class="retro-card-header header-red">
+            <div class="retro-card-header">
               <h3 class="retro-card-name">Combo 2</h3>
-              <span class="retro-card-pill">CLÁSICO</span>
             </div>
             <div class="retro-card-body">
               <p class="retro-card-desc">Cheeseburger + Papas + Bebida</p>
@@ -293,9 +320,8 @@
         <div class="retro-menu-grid">
 
           <article class="retro-menu-card">
-            <div class="retro-card-header">
+            <div class="retro-card-header header-red">
               <h3 class="retro-card-name">Muñoz Doble</h3>
-              <span class="retro-card-pill">FAVORITA</span>
             </div>
             <div class="retro-card-body">
               <p class="retro-card-desc">Nuestra Muñoz Doble lleva dos carnes 100% de res sin congelar, dos rebanadas de auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa, bien apilada en un pan de papa Martin's</p>
@@ -303,9 +329,8 @@
           </article>
 
           <article class="retro-menu-card">
-            <div class="retro-card-header header-red">
+            <div class="retro-card-header">
               <h3 class="retro-card-name">Cheeseburger</h3>
-              <span class="retro-card-pill">CLÁSICA</span>
             </div>
             <div class="retro-card-body">
               <p class="retro-card-desc">Clásica smash cheeseburger estilo California: una carne 100% de res sin congelar, auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa en un pan de papa Martin's.</p>
@@ -320,7 +345,7 @@
         <div class="retro-menu-grid retro-menu-grid-wide">
 
           <article class="retro-menu-card retro-menu-card-row">
-            <div class="retro-card-header" style="min-width:180px;">
+            <div class="retro-card-header header-red" style="min-width:180px;">
               <h3 class="retro-card-name">Papas Fritas</h3>
             </div>
             <div class="retro-card-body retro-card-body-row">
@@ -329,7 +354,7 @@
           </article>
 
           <article class="retro-menu-card retro-menu-card-row">
-            <div class="retro-card-header header-red" style="min-width:180px;">
+            <div class="retro-card-header" style="min-width:180px;">
               <h3 class="retro-card-name">Bebidas</h3>
             </div>
             <div class="retro-card-body retro-card-body-row">
