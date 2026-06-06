@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://munozburger.com/sitemap.xml
