@@ -244,15 +244,6 @@ img { max-width: 100%; height: auto; display: block; }
   filter: drop-shadow(0 4px 20px rgba(0,0,0,0.45));
 }
 
-.retro-hero-tagline {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: clamp(1rem, 2.2vw, 1.25rem);
-  color: var(--white);
-  letter-spacing: 0.04em;
-  margin: 0 0 2rem;
-}
-
 .retro-hero-title {
   font-family: var(--font-display);
   font-size: clamp(4rem, 13vw, 9.5rem);
@@ -260,6 +251,10 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.01em;
   line-height: 0.88;
   margin: 0 0 1.5rem;
+  text-shadow: 
+    3px 3px 0 var(--red),
+    7px 7px 0 var(--navy),
+    10px 10px 20px rgba(0,0,0,0.6);
 }
 
 .retro-hero-cta {
@@ -471,28 +466,30 @@ img { max-width: 100%; height: auto; display: block; }
 /* Category rule */
 .retro-category-rule {
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
   color: var(--navy);
-  margin: 2.5rem 0 1.25rem;
+  margin: 3rem 0 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   text-transform: uppercase;
 }
 .retro-category-rule::before {
   content: '';
   flex: 1;
-  height: 1.5px;
+  height: 4px;
   background: var(--navy);
-  opacity: 0.2;
+  border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
 }
 .retro-category-rule::after {
   content: '';
   flex: 1;
-  height: 1.5px;
+  height: 4px;
   background: var(--navy);
-  opacity: 0.2;
+  border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
 }
 
 /* ============================================================
@@ -507,17 +504,17 @@ img { max-width: 100%; height: auto; display: block; }
 
 .retro-menu-card {
   background: var(--white);
-  border: 1.5px solid var(--navy);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border: 3px solid var(--navy);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--navy);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
 }
 .retro-menu-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow-lg);
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--red);
 }
 
 .retro-card-header {
@@ -970,6 +967,62 @@ img { max-width: 100%; height: auto; display: block; }
 
 button, a[role="button"], .btn-retro { min-height: 44px; }
 
+/* ═══ 1950s DINER VISUAL ACCENTS ═══ */
+
+.retro-checkerboard {
+  height: 18px;
+  background-color: var(--white);
+  background-image: 
+    linear-gradient(45deg, var(--red) 25%, transparent 25%), 
+    linear-gradient(-45deg, var(--red) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, var(--red) 75%), 
+    linear-gradient(-45deg, transparent 75%, var(--red) 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+  border-top: 3.5px solid var(--navy);
+  border-bottom: 3.5px solid var(--navy);
+  width: 100%;
+}
+
+
+
+@keyframes neon-pulse {
+  0% {
+    border-color: rgba(179, 25, 66, 0.65);
+    box-shadow: 
+      0 0 3px rgba(179, 25, 66, 0.65),
+      inset 0 0 3px rgba(179, 25, 66, 0.65),
+      0 4px 10px rgba(0,0,0,0.4);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    border-color: var(--red);
+    box-shadow: 
+      0 0 18px var(--red),
+      inset 0 0 10px var(--red),
+      0 4px 25px rgba(179,25,66,0.35);
+    text-shadow: 
+      0 0 4px var(--white),
+      0 0 8px var(--red);
+  }
+}
+
+.retro-badge-walkup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--navy);
+  background: var(--cream);
+  padding: 4px 12px;
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -978,6 +1031,6 @@ button, a[role="button"], .btn-retro { min-height: 44px; }
 }
 
 @media print {
-  .retro-header, .retro-hero-video, #toast-container { display: none !important; }
+  .retro-header, .retro-hero-video, #toast-container, .retro-checkerboard { display: none !important; }
   body { color: black; background: white; }
 }

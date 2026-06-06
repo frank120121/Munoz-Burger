@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "combos",
+      "name": "Combos",
+      "items": [
+        {
+          "name": "Combo 1",
+          "description": "Muñoz Doble + Papas + Bebida",
+          "tags": ["Doble carne", "Doble queso"],
+          "isRedHeader": true
+        },
+        {
+          "name": "Combo 2",
+          "description": "Cheeseburger + Papas + Bebida"
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name": "Hamburguesas",
+      "items": [
+        {
+          "name": "Muñoz Doble",
+          "description": "Nuestra Muñoz Doble lleva dos carnes 100% de res sin congelar, dos rebanadas de auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa, bien apilada en un pan de papa Martin's",
+          "isRedHeader": true
+        },
+        {
+          "name": "Cheeseburger",
+          "description": "Clásica smash cheeseburger estilo California: una carne 100% de res sin congelar, auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa en un pan de papa Martin's."
+        }
+      ]
+    },
+    {
+      "id": "papas-drinks",
+      "name": "Papas & Bebidas",
+      "items": [
+        {
+          "name": "Papas Fritas",
+          "description": "Papas a la francesa crujientes, fritas en sebo de res y sazonadas con sal de mar.",
+          "isRedHeader": true,
+          "layout": "row"
+        },
+        {
+          "name": "Bebidas",
+          "description": "",
+          "layout": "row",
+          "drinks": [
+            "Café",
+            "Limonada",
+            "Coca-Cola",
+            "Coca Light",
+            "Sprite",
+            "Dr Pepper"
+          ]
+        }
+      ]
+    }
+  ]
+}

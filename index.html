@@ -57,11 +57,9 @@
     .retro-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(170deg,rgba(10,49,97,.88) 0%,rgba(10,49,97,.65) 50%,rgba(10,49,97,.92) 100%)}
     .retro-hero-content{position:relative;z-index:2;text-align:center;padding:3rem 1.5rem 4rem;max-width:760px;width:100%}
     .retro-hero-title{font-family:'Alfa Slab One','Bebas Neue',serif;font-size:clamp(4rem,13vw,9.5rem);color:#fff;letter-spacing:.01em;line-height:.88;margin:0 0 1.5rem}
-    .retro-hero-tagline{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.25rem);color:#fff;letter-spacing:.04em;margin:0 0 2rem}
     .retro-hero-logo{max-width:240px;width:100%;margin:0 auto 1.5rem;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5))}
     .btn-retro{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Bebas Neue','Impact',sans-serif;letter-spacing:.12em;font-size:1.2rem;padding:14px 34px;border-radius:6px;cursor:pointer;transition:transform .1s,box-shadow .1s;text-decoration:none;white-space:nowrap;min-height:52px;border:2px solid transparent;line-height:1}
     .btn-primary{background:#B31942;color:#fff;border-color:#B31942;box-shadow:4px 4px 0 rgba(0,0,0,.2)}
-    .retro-hero-tagline{font-family:'Bebas Neue','Impact',sans-serif;font-size:clamp(.9rem,2.5vw,1.3rem);color:rgba(255,255,255,.55);letter-spacing:.4em;margin:0 0 .5rem}
   </style>
 
   <link rel="preload" href="/assets/css/retro.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -211,9 +209,8 @@
       </div>
 
       <h1 class="retro-hero-title">BURGERS<br>&amp; FRIES</h1>
-
-      <p class="retro-hero-tagline">Hecho al momento · Carne sin congelar · Nogales, Sonora</p>
-
+      
+      
       <div class="retro-hero-cta">
         <a
           href="#menu"
@@ -236,6 +233,7 @@
 
   </section>
 
+  <div class="retro-checkerboard" aria-hidden="true"></div>
 
   <div id="toast-container" role="region" aria-label="Notificaciones" aria-live="polite"></div>
 
@@ -288,87 +286,22 @@
 
         <!-- COMBOS -->
         <div class="retro-category-rule" aria-label="Categoría: Combos">COMBOS</div>
-        <div class="retro-menu-grid">
-
-          <article class="retro-menu-card">
-            <div class="retro-card-header header-red">
-              <h3 class="retro-card-name">Combo 1</h3>
-            </div>
-            <div class="retro-card-body">
-              <p class="retro-card-desc">Muñoz Doble + Papas + Bebida</p>
-              <div class="retro-card-tags">
-                <span class="retro-tag">Doble carne</span>
-                <span class="retro-tag">Doble queso</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="retro-menu-card">
-            <div class="retro-card-header">
-              <h3 class="retro-card-name">Combo 2</h3>
-            </div>
-            <div class="retro-card-body">
-              <p class="retro-card-desc">Cheeseburger + Papas + Bebida</p>
-            </div>
-          </article>
-
+        <div id="menu-combos-container" class="retro-menu-grid">
+          <!-- Cargar dinámicamente -->
         </div>
 
 
         <!-- HAMBURGUESAS -->
         <div class="retro-category-rule" aria-label="Categoría: Hamburguesas">HAMBURGUESAS</div>
-        <div class="retro-menu-grid">
-
-          <article class="retro-menu-card">
-            <div class="retro-card-header header-red">
-              <h3 class="retro-card-name">Muñoz Doble</h3>
-            </div>
-            <div class="retro-card-body">
-              <p class="retro-card-desc">Nuestra Muñoz Doble lleva dos carnes 100% de res sin congelar, dos rebanadas de auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa, bien apilada en un pan de papa Martin's</p>
-            </div>
-          </article>
-
-          <article class="retro-menu-card">
-            <div class="retro-card-header">
-              <h3 class="retro-card-name">Cheeseburger</h3>
-            </div>
-            <div class="retro-card-body">
-              <p class="retro-card-desc">Clásica smash cheeseburger estilo California: una carne 100% de res sin congelar, auténtico queso americano, lechuga deshojada a mano, jitomate, cebolla y nuestro aderezo de la casa en un pan de papa Martin's.</p>
-            </div>
-          </article>
-
+        <div id="menu-burgers-container" class="retro-menu-grid">
+          <!-- Cargar dinámicamente -->
         </div>
 
 
         <!-- PAPAS & BEBIDAS -->
         <div class="retro-category-rule" aria-label="Categoría: Papas y Bebidas">PAPAS &amp; BEBIDAS</div>
-        <div class="retro-menu-grid retro-menu-grid-wide">
-
-          <article class="retro-menu-card retro-menu-card-row">
-            <div class="retro-card-header header-red" style="min-width:180px;">
-              <h3 class="retro-card-name">Papas Fritas</h3>
-            </div>
-            <div class="retro-card-body retro-card-body-row">
-              <p class="retro-card-desc">Papas a la francesa crujientes, fritas en sebo de res y sazonadas con sal de mar.</p>
-            </div>
-          </article>
-
-          <article class="retro-menu-card retro-menu-card-row">
-            <div class="retro-card-header" style="min-width:180px;">
-              <h3 class="retro-card-name">Bebidas</h3>
-            </div>
-            <div class="retro-card-body retro-card-body-row">
-              <div class="retro-drinks-list">
-                <div class="retro-drink-row"><span>Café</span></div>
-                <div class="retro-drink-row"><span>Limonada</span></div>
-                <div class="retro-drink-row"><span>Coca-Cola</span></div>
-                <div class="retro-drink-row"><span>Coca Light</span></div>
-                <div class="retro-drink-row"><span>Sprite</span></div>
-                <div class="retro-drink-row"><span>Dr Pepper</span></div>
-              </div>
-            </div>
-          </article>
-
+        <div id="menu-papas-drinks-container" class="retro-menu-grid retro-menu-grid-wide">
+          <!-- Cargar dinámicamente -->
         </div>
 
 
@@ -417,6 +350,8 @@
       </div>
     </section>
 
+  <div class="retro-checkerboard" aria-hidden="true"></div>
+
 
     <!-- ── Location ── -->
     <section id="location" class="retro-section retro-section-cream" aria-labelledby="location-heading">
@@ -448,15 +383,15 @@
 
           <div class="retro-info-stack">
 
-            <div class="retro-info-card">
+            <div class="retro-info-card" itemscope itemtype="https://schema.org/Restaurant">
               <h3 class="retro-info-card-title">
                 <span aria-hidden="true">📍</span>
                 DIRECCIÓN
               </h3>
-              <address style="font-style:normal;font-size:.9rem;color:#374151;line-height:1.8;">
-                Prolongación Álvaro Obregón 4257<br>
-                Villa Sonora, 84093<br>
-                Heroica Nogales, Sonora
+              <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="font-style:normal;font-size:.9rem;color:#374151;line-height:1.8;">
+                <span itemprop="streetAddress">Prolongación Álvaro Obregón 4257</span><br>
+                <span itemprop="addressLocality">Villa Sonora</span>, <span itemprop="postalCode">84093</span><br>
+                <span itemprop="addressRegion">Heroica Nogales, Sonora</span>
               </address>
               <button
                 onclick="navigator.clipboard?.writeText('Prolongación Álvaro Obregón 4257, Villa Sonora, 84093, Heroica Nogales, Sonora').then(()=>alert('¡Dirección copiada!'))"
@@ -496,6 +431,8 @@
         </div>
       </div>
     </section>
+
+  <div class="retro-checkerboard" aria-hidden="true"></div>
 
 
     <!-- ── Contact ── -->
@@ -584,16 +521,16 @@
         </ul>
       </div>
 
-      <div class="retro-footer-col">
-        <h3>CONTACTO</h3>
+      <div class="retro-footer-col" itemscope itemtype="https://schema.org/Restaurant">
+        <h3 itemprop="name">CONTACTO</h3>
         <address class="retro-footer-address">
-          <a href="https://www.google.com/maps/search/?api=1&query=Prolongación+Álvaro+Obregón+4257,+Villa+Sonora,+84093,+Heroica+Nogales,+Sonora" target="_blank" rel="noopener noreferrer">
-            Prolongación Álvaro Obregón 4257<br>
-            Villa Sonora, 84093<br>
-            Heroica Nogales, Sonora
+          <a href="https://www.google.com/maps/search/?api=1&query=Prolongación+Álvaro+Obregón+4257,+Villa+Sonora,+84093,+Heroica+Nogales,+Sonora" target="_blank" rel="noopener noreferrer" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Prolongación Álvaro Obregón 4257</span><br>
+            <span itemprop="addressLocality">Villa Sonora</span>, <span itemprop="postalCode">84093</span><br>
+            <span itemprop="addressRegion">Heroica Nogales, Sonora</span>
           </a><br>
-          <a href="tel:+526311093226">(631) 109-3226</a><br>
-          <a href="mailto:info@munozburger.com">info@munozburger.com</a>
+          <a href="tel:+526311093226">📞 <span itemprop="telephone">(631) 109-3226</span></a><br>
+          <a href="mailto:info@munozburger.com">✉️ <span itemprop="email">info@munozburger.com</span></a>
         </address>
       </div>
 
@@ -607,34 +544,7 @@
 
 
   <!-- ═══ SCRIPTS ═══ -->
-  <script>
-    (function() {
-      var btn  = document.getElementById('mobileToggle');
-      var menu = document.getElementById('mobileMenu');
-      if (!btn || !menu) return;
-
-      function openMenu() {
-        menu.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-        menu.setAttribute('aria-hidden', 'false');
-        btn.querySelector('svg').innerHTML = '<line x1="3" y1="6" x2="21" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>';
-      }
-      function closeMenu() {
-        menu.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-        menu.setAttribute('aria-hidden', 'true');
-        btn.querySelector('svg').innerHTML = '<line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>';
-      }
-
-      btn.addEventListener('click', function() { menu.classList.contains('open') ? closeMenu() : openMenu(); });
-      window.closeMobileMenu = closeMenu;
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && menu.classList.contains('open')) closeMenu(); });
-
-      var yr = document.getElementById('current-year');
-      if (yr) yr.textContent = new Date().getFullYear();
-    })();
-  </script>
-
+  <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/sw-registration.js" defer></script>
 
 </body>

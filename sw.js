@@ -1,6 +1,6 @@
 // sw.js — Muñoz Burger service worker
 
-const CACHE_VERSION = 'munoz-burger-v2.2.0';
+const CACHE_VERSION = 'munoz-burger-v2.0.1';
 const CACHE_NAME = `cache-${CACHE_VERSION}`;
 const OFFLINE_PAGE = '/offline.html';
 
@@ -11,9 +11,10 @@ const PRECACHE_ASSETS = [
   '/manifest.json',
   '/assets/css/retro.css',
   '/assets/js/sw-registration.js',
+  '/assets/js/main.js',
+  '/assets/data/menu.json',
   '/assets/images/logo/android-chrome-192x192.png',
   '/assets/images/logo/android-chrome-512x512.png',
-
 ];
 
 self.addEventListener('install', event => {
