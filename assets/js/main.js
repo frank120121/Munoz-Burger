@@ -184,9 +184,48 @@
     }
   }
 
+  // --- FAQ Accordion ---
+  function initFaqAccordion() {
+    const items = document.querySelectorAll('.retro-faq-item');
+    items.forEach(item => {
+      const question = item.querySelector('.retro-faq-question');
+      const answer = item.querySelector('.retro-faq-answer');
+      if (!question || !answer) return;
+
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close other items
+        items.forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.retro-faq-question').setAttribute('aria-expanded', 'false');
+            const otherAns = otherItem.querySelector('.retro-faq-answer');
+            otherAns.style.maxHeight = null;
+            otherAns.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Toggle current item
+        if (isActive) {
+          item.classList.remove('active');
+          question.setAttribute('aria-expanded', 'false');
+          answer.style.maxHeight = null;
+          answer.setAttribute('aria-hidden', 'true');
+        } else {
+          item.classList.add('active');
+          question.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          answer.setAttribute('aria-hidden', 'false');
+        }
+      });
+    });
+  }
+
   // --- Entry Point ---
   document.addEventListener('DOMContentLoaded', () => {
     initGeneralScripts();
     loadMenu();
+    initFaqAccordion();
   });
 })();
