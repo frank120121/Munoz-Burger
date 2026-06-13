@@ -67,8 +67,18 @@
       innerBodyHTML = `<p class="retro-card-desc">${item.description}</p>${tagsHTML}`;
     }
 
+    let imageHTML = '';
+    if (item.image) {
+      imageHTML = `
+        <div class="retro-card-image-wrap">
+          <img src="${item.image}" alt="${item.name}" class="retro-card-image" loading="lazy" width="600" height="450">
+        </div>
+      `;
+    }
+
     return `
       <article class="${cardClass}">
+        ${imageHTML}
         <div class="${headerClass}" ${headerStyle}>
           <h3 class="retro-card-name">${item.name}</h3>
         </div>

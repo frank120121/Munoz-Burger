@@ -1,6 +1,6 @@
 // sw.js — Muñoz Burger service worker
 
-const CACHE_VERSION = 'munoz-burger-v2.3.5';
+const CACHE_VERSION = 'munoz-burger-v2.3.6';
 const CACHE_NAME = `cache-${CACHE_VERSION}`;
 const OFFLINE_PAGE = '/offline.html';
 
@@ -18,6 +18,12 @@ const PRECACHE_ASSETS = [
   '/assets/images/logo/logo-og-1200-630.webp',
   '/assets/images/logo/munoz-burger-logo-128.webp',
   '/assets/images/logo/munoz-burger-logo-300.webp',
+  '/assets/images/menu/combo-1.webp',
+  '/assets/images/menu/combo-2.webp',
+  '/assets/images/menu/munoz-doble.webp',
+  '/assets/images/menu/cheeseburger.webp',
+  '/assets/images/menu/papas-fritas.webp',
+  '/assets/images/menu/bebidas.webp',
 ];
 
 self.addEventListener('install', event => {
